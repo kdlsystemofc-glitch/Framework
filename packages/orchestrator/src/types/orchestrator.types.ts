@@ -9,6 +9,7 @@ export type PipelineState =
   | 'INITIALIZING'
   | 'RUNNING'
   | 'WAITING'
+  | 'WAITING_FOR_APPROVAL'
   | 'RETRYING'
   | 'PAUSED'
   | 'FAILED'
@@ -99,6 +100,7 @@ export interface StageDefinition {
   dependencies: string[];
   retryPolicy: StageRetryPolicy;
   failurePolicy: FailurePolicy;
+  approvalRequired?: boolean;
   executor: (context: SharedExecutionContext) => Promise<unknown>;
 }
 
@@ -111,7 +113,7 @@ export interface PipelineDefinition {
 
 export interface StageCheckpoint {
   stageId: string;
-  status: 'PENDING' | 'RUNNING' | 'COMPLETED' | 'FAILED' | 'SKIPPED';
+  status: 'PENDING' | 'RUNNING' | 'WAITING_FOR_APPROVAL' | 'COMPLETED' | 'FAILED' | 'SKIPPED';
   attempts: number;
   durationMs: number;
   error?: string;

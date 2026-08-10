@@ -9,6 +9,7 @@ dist/
 # Test & Temporary Directories
 temp/
 Clientes/
+examples/
 .project/execution/
 .project/state/
 reports/*.json

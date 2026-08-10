@@ -1,7 +1,7 @@
 import { Command } from 'commander';
 import { KDLCLICommand } from './command.interface.js';
 import { WizardPrompt } from '../prompts/wizard.prompt.js';
-import { OrchestratorEngine, CheckpointManager, EventBus, PipelineEvent } from '@kdl/orchestrator';
+import { OrchestratorEngine, CheckpointManager, EventBus, PipelineEvent, MethodologyRegistry } from '@kdl/orchestrator';
 import { IndustrySector } from '@kdl/inspiration';
 import { logger } from '../utils/logger.js';
 import { Formatter } from '../utils/formatter.js';
@@ -35,25 +35,24 @@ export class CreateCommand implements KDLCLICommand {
         const projectPath = path.resolve(process.cwd(), targetFolder);
         const sector: IndustrySector = (nicheInput?.toLowerCase() as IndustrySector) || 'restaurants';
 
+        const officialPhases = MethodologyRegistry.getOfficialPhases();
+
         logger.info(Formatter.header(`KDL PIPELINE ORCHESTRATOR — ${targetFolder}`));
         logger.info(`Mode: ${options.nonInteractive ? 'NON-INTERACTIVE (CI/CD)' : 'INTERACTIVE'} | Dry-Run: ${options.dryRun ? 'YES' : 'NO'}`);
 
         if (options.dryRun) {
-          logger.info(`[DRY RUN] Simulating master landing page pipeline for sector '${sector}'...`);
-          logger.info(`[01/08] 01-bootstrap: Simulating 12 directory creation & asset verification`);
-          logger.info(`[02/08] 02-seo-research: Simulating keyword research`);
-          logger.info(`[03/08] 03-competitor-audit: Simulating whitespace audit`);
-          logger.info(`[04/08] 04-inspiration: Simulating token extraction`);
-          logger.info(`[05/08] 05-creative-direction: Simulating Creative DNA generation`);
-          logger.info(`[06/08] 06-builder: Simulating HTML5/GSAP code compilation`);
-          logger.info(`[07/08] 07-review-autofix-loop: Simulating 15 auditors & Quality Gates`);
-          logger.info(`[08/08] 08-final-report: Simulating EXECUTION_REPORT.md emission`);
+          logger.info(`[DRY RUN] Simulating master 12-phase landing page pipeline for sector '${sector}'...`);
+          officialPhases.forEach((phase, idx) => {
+            const num = String(idx + 1).padStart(2, '0');
+            const total = String(officialPhases.length).padStart(2, '0');
+            logger.info(`[${num}/${total}] ${phase.id}: Simulating ${phase.shortName} (${phase.description})`);
+          });
           logger.success(`[DRY RUN] Master pipeline verification completed successfully. Zero changes written.`);
           return;
         }
 
         let stageIndex = 0;
-        const totalStages = 7;
+        const totalStages = officialPhases.length;
 
         EventBus.getInstance().subscribe('pipeline.stage.started', (ev: PipelineEvent) => {
           stageIndex++;
@@ -62,7 +61,12 @@ export class CreateCommand implements KDLCLICommand {
         });
 
         EventBus.getInstance().subscribe('pipeline.stage.completed', (ev: PipelineEvent) => {
-          logger.success(`✔ Completed Stage: ${ev.stageId || 'unknown'}`);
+          const payload = ev.payload as any;
+          if (payload?.status === 'WAITING_FOR_APPROVAL') {
+            logger.warn(`⏸ Stage ${ev.stageId} PAUSED: Waiting for Human Approval (approvalRequired = true)`);
+          } else {
+            logger.success(`✔ Completed Stage: ${ev.stageId || 'unknown'}`);
+          }
         });
 
         const cpManager = new CheckpointManager(projectPath);
@@ -78,8 +82,9 @@ export class CreateCommand implements KDLCLICommand {
           targetFolder,
           projectPath,
           sector,
-          'landing-page',
-          resumeMode
+          'landing-page-master',
+          resumeMode,
+          !options.nonInteractive
         );
 
         logger.success(Formatter.header(`KDL MASTER PIPELINE ORCHESTRATION COMPLETE`));
@@ -88,6 +93,7 @@ export class CreateCommand implements KDLCLICommand {
         logger.info(`Passed Quality Gates: ${ctx.review?.passedAllGates ? 'YES ✅' : 'NO ❌'}`);
         logger.info(`Final Audit Report: ${projectPath}/reports/FINAL_AUDIT.md`);
         logger.info(`Final Execution Report: ${projectPath}/reports/EXECUTION_REPORT.md`);
+        logger.info(`Publication Package: ${projectPath}/reports/publication-report.md`);
       });
   }
 }

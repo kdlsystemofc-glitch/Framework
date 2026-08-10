@@ -1,4 +1,4 @@
-import { PipelineDefinition, SharedExecutionContext, PipelineCheckpoint, StageCheckpoint, PipelineState } from '../types/orchestrator.types.js';
+import { PipelineDefinition, SharedExecutionContext, PipelineCheckpoint, StageCheckpoint } from '../types/orchestrator.types.js';
 import { StateMachine } from '../state/state-machine.js';
 import { CheckpointManager } from '../checkpoint/checkpoint.manager.js';
 import { RetryHandler } from '../retry/retry.handler.js';
@@ -12,7 +12,8 @@ export class PipelineExecutor {
   public async executePipeline(
     pipeline: PipelineDefinition,
     context: SharedExecutionContext,
-    resumeMode = false
+    resumeMode = false,
+    isInteractive = false
   ): Promise<SharedExecutionContext> {
     const checkpointManager = new CheckpointManager(context.projectPath);
     const stateMachine = new StateMachine();
@@ -57,7 +58,6 @@ export class PipelineExecutor {
       const batches = StageScheduler.getExecutableBatches(pipeline.stages, completedStageIds);
 
       for (const batch of batches) {
-        // Execute batch stages in parallel
         await Promise.all(
           batch.map(async (stage) => {
             if (completedStageIds.has(stage.id)) {
@@ -97,9 +97,11 @@ export class PipelineExecutor {
               );
 
               const durationMs = Date.now() - startTime;
+              const status = (isInteractive && stage.approvalRequired) ? 'WAITING_FOR_APPROVAL' : 'COMPLETED';
+              
               const stageCp: StageCheckpoint = {
                 stageId: stage.id,
-                status: 'COMPLETED',
+                status,
                 attempts: Math.max(1, attempts),
                 durationMs,
                 completedAt: new Date().toISOString(),
@@ -115,7 +117,7 @@ export class PipelineExecutor {
                 executionId: context.executionId,
                 stageId: stage.id,
                 timestamp: new Date().toISOString(),
-                payload: { durationMs },
+                payload: { durationMs, status },
               });
             } catch (err) {
               const errorMsg = err instanceof Error ? err.message : String(err);

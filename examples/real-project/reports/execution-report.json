@@ -1,6 +1,6 @@
 {
-  "executionId": "exec-6d224a58",
-  "projectName": "examples/real-project",
+  "executionId": "exec-90fc841a",
+  "projectName": "L'Étoile Fine Dining E2E Test",
   "sector": "restaurants",
   "hasBootstrap": true,
   "hasInspiration": true,
@@ -9,5 +9,5 @@
   "hasReview": true,
   "overallScore": 98,
   "passedAllGates": true,
-  "timestamp": "2026-08-10T11:02:09.137Z"
+  "timestamp": "2026-08-10T16:36:28.870Z"
 }

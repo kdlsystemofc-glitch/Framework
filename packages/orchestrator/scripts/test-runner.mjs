@@ -4,6 +4,7 @@ import { runEventsTests } from '../tests/events.test.js';
 import { runRetryTests } from '../tests/retry.test.js';
 import { runSchedulerTests } from '../tests/scheduler.test.js';
 import { runPipelineExecutionTests } from '../tests/pipeline-execution.test.js';
+import { execSync } from 'child_process';
 
 async function main() {
   console.log('🚀 Running @kdl/orchestrator Unit & Integration Test Suite...\n');
@@ -14,8 +15,12 @@ async function main() {
     await runRetryTests();
     await runSchedulerTests();
     await runPipelineExecutionTests();
+    
+    console.log('Running methodology-runtime.test.ts...');
+    execSync('node --import tsx tests/methodology-runtime.test.ts', { stdio: 'inherit' });
+
     console.log('\n==================================================');
-    console.log('✅ ALL @KDL/ORCHESTRATOR TEST SUITES PASSED (6/6 100%)');
+    console.log('✅ ALL @KDL/ORCHESTRATOR TEST SUITES PASSED (7/7 100%)');
     console.log('==================================================');
   } catch (error) {
     console.error('\n❌ Test suite failed:', error);

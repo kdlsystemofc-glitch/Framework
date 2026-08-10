@@ -16,7 +16,7 @@ export interface KDLPhaseDefinition {
   id: KDLPhaseId;
   name: string;
   agentPromptPath: string;
-  templatePath: string;
+  templatePath?: string;
   checklistPath?: string;
   outputArtifact: string;
 }

@@ -12,22 +12,28 @@ export class OrchestratorEngine {
   private executor = new PipelineExecutor();
 
   constructor() {
-    // Automatically register default landing page master pipeline
-    this.registry.registerPipeline(createLandingPagePipeline());
+    const landingMaster = createLandingPagePipeline();
+    // Register under landing-page-master and alias landing-page for backward compatibility
+    this.registry.registerPipeline(landingMaster);
+    this.registry.registerPipeline({
+      ...landingMaster,
+      id: 'landing-page',
+    });
   }
 
   public async executePipeline(
     projectName: string,
     projectPath: string,
     sector: IndustrySector = 'restaurants',
-    pipelineId = 'landing-page',
-    resumeMode = false
+    pipelineId = 'landing-page-master',
+    resumeMode = false,
+    isInteractive = false
   ): Promise<SharedExecutionContext> {
     const pipeline = this.registry.getPipeline(pipelineId);
     const executionId = `exec-${crypto.randomBytes(4).toString('hex')}`;
     const context = ExecutionContextHolder.createInitialContext(executionId, projectName, projectPath, sector);
 
-    const updatedContext = await this.executor.executePipeline(pipeline, context, resumeMode);
+    const updatedContext = await this.executor.executePipeline(pipeline, context, resumeMode, isInteractive);
     ExecutionReporter.generateExecutionReport(updatedContext);
 
     return updatedContext;
