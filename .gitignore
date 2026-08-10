@@ -4,6 +4,7 @@ package-lock.json
 
 # Build outputs
 dist/
+*.tsbuildinfo
 
 # Test & Temporary Directories
 temp/
@@ -11,6 +12,8 @@ Clientes/
 .project/execution/
 .project/state/
 reports/*.json
+.kdl-ai-director-memory.json
+.kdl-inspiration-cache.json
 
 # Logs
 *.log

@@ -1,0 +1,23 @@
+{
+  "name": "@kdl/framework-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KDL Landing Framework — Software Operating System Monorepo",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter @kdl/bootstrap build && pnpm --filter @kdl/inspiration build && pnpm --filter @kdl/ai-director build && pnpm --filter @kdl/builder build && pnpm --filter @kdl/reviewer build && pnpm --filter @kdl/orchestrator build && pnpm --filter @kdl/cli build",
+    "test": "node --import tsx tests/e2e/e2e-pipeline.test.ts && pnpm --filter @kdl/orchestrator test && pnpm --filter @kdl/reviewer test && pnpm --filter @kdl/builder test && pnpm --filter @kdl/ai-director test && pnpm --filter @kdl/inspiration test && pnpm --filter @kdl/bootstrap test && pnpm --filter @kdl/cli test",
+    "typecheck": "tsc --project packages/bootstrap/tsconfig.json && tsc --project packages/inspiration/tsconfig.json && tsc --project packages/ai-director/tsconfig.json && tsc --project packages/builder/tsconfig.json && tsc --project packages/reviewer/tsconfig.json && tsc --project packages/orchestrator/tsconfig.json && tsc --project packages/cli/tsconfig.json",
+    "lint": "pnpm typecheck",
+    "clean": "node -e \"['packages/bootstrap/dist','packages/inspiration/dist','packages/ai-director/dist','packages/builder/dist','packages/reviewer/dist','packages/orchestrator/dist','packages/cli/dist'].forEach(d => require('fs').rmSync(d, {recursive: true, force: true}))\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

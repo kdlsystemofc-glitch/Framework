@@ -21,6 +21,7 @@
   "license": "Proprietary",
   "devDependencies": {
     "@types/node": "^20.19.43",
+    "tsx": "^4.7.0",
     "typescript": "^5.4.0"
   },
   "engines": {

@@ -6,7 +6,7 @@
     "lib": ["ES2022", "DOM"],
     "types": ["node"],
     "declaration": true,
-    "declarationMap": true,
+    "declarationMap": false,
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./src",
@@ -21,14 +21,7 @@
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "paths": {
-      "@kdl/ai-director": ["../ai-director/dist/index.d.ts"],
-      "@kdl/bootstrap": ["../bootstrap/dist/index.d.ts"],
-      "@kdl/builder": ["../builder/dist/index.d.ts"],
-      "@kdl/inspiration": ["../inspiration/dist/index.d.ts"],
-      "@kdl/reviewer": ["../reviewer/dist/index.d.ts"]
-    }
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src/**/*"]
 }

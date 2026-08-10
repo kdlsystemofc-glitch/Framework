@@ -1,8 +1,8 @@
 import { Command } from 'commander';
 import { KDLCLICommand } from './command.interface.js';
 import { WizardPrompt } from '../prompts/wizard.prompt.js';
-import { OrchestratorEngine, CheckpointManager, EventBus } from '../../../orchestrator/dist/index.js';
-import { IndustrySector } from '../../../inspiration/dist/index.js';
+import { OrchestratorEngine, CheckpointManager, EventBus, PipelineEvent } from '@kdl/orchestrator';
+import { IndustrySector } from '@kdl/inspiration';
 import { logger } from '../utils/logger.js';
 import { Formatter } from '../utils/formatter.js';
 import path from 'path';
@@ -55,14 +55,14 @@ export class CreateCommand implements KDLCLICommand {
         let stageIndex = 0;
         const totalStages = 7;
 
-        EventBus.getInstance().subscribe('pipeline.stage.started', (ev) => {
+        EventBus.getInstance().subscribe('pipeline.stage.started', (ev: PipelineEvent) => {
           stageIndex++;
           const stageFormatted = String(stageIndex).padStart(2, '0');
-          logger.info(`[${stageFormatted}/${String(totalStages).padStart(2, '0')}] Stage Started: ${ev.stageId}`);
+          logger.info(`[${stageFormatted}/${String(totalStages).padStart(2, '0')}] Stage Started: ${ev.stageId || 'unknown'}`);
         });
 
-        EventBus.getInstance().subscribe('pipeline.stage.completed', (ev) => {
-          logger.success(`✔ Completed Stage: ${ev.stageId}`);
+        EventBus.getInstance().subscribe('pipeline.stage.completed', (ev: PipelineEvent) => {
+          logger.success(`✔ Completed Stage: ${ev.stageId || 'unknown'}`);
         });
 
         const cpManager = new CheckpointManager(projectPath);
