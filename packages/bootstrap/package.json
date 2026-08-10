@@ -1,0 +1,29 @@
+{
+  "name": "@kdl/bootstrap",
+  "version": "1.0.0",
+  "description": "Project Bootstrap Engine for KDL Landing Framework",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --import tsx scripts/test-runner.mjs"
+  },
+  "keywords": [
+    "kdl",
+    "bootstrap",
+    "asset-scanner",
+    "project-bootstrap",
+    "landing-page"
+  ],
+  "author": "KDL System",
+  "license": "Proprietary",
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

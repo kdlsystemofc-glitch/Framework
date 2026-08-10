@@ -1,0 +1,29 @@
+{
+  "name": "@kdl/inspiration",
+  "version": "1.0.0",
+  "description": "Inspiration Engine & Design Intelligence for KDL Landing Framework",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --import tsx scripts/test-runner.mjs"
+  },
+  "keywords": [
+    "kdl",
+    "inspiration",
+    "design-intelligence",
+    "design-tokens",
+    "dfii-score"
+  ],
+  "author": "KDL System",
+  "license": "Proprietary",
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

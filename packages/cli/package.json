@@ -1,0 +1,41 @@
+{
+  "name": "@kdl/cli",
+  "version": "1.0.0",
+  "description": "Official CLI for KDL Landing Framework — Software Operating System",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "kdl": "./bin/kdl.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node ./bin/kdl.js",
+    "test": "node --import tsx scripts/test-runner.mjs"
+  },
+  "keywords": [
+    "kdl",
+    "cli",
+    "landing-page",
+    "framework"
+  ],
+  "author": "KDL System",
+  "license": "Proprietary",
+  "dependencies": {
+    "@kdl/ai-director": "file:../ai-director",
+    "@kdl/bootstrap": "file:../bootstrap",
+    "@kdl/builder": "file:../builder",
+    "@kdl/inspiration": "file:../inspiration",
+    "@kdl/orchestrator": "file:../orchestrator",
+    "@kdl/reviewer": "file:../reviewer",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

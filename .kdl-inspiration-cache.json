@@ -1,0 +1,739 @@
+[
+  {
+    "id": "awwward-restaurants-01",
+    "url": "https://www.awwwards.com/sites/restaurants-site-of-the-day",
+    "title": "Awwwards SOTD RESTAURANTS Masterpiece",
+    "source": "Awwwards",
+    "sector": "restaurants",
+    "tags": [
+      "restaurants",
+      "site-of-the-day",
+      "cinematic"
+    ],
+    "extractedTokens": {
+      "colors": {
+        "dominant60": "hsl(220, 15%, 8%)",
+        "secondary30": "hsl(220, 10%, 15%)",
+        "accent10": "hsl(45, 90%, 55%)",
+        "textPrimary": "#ffffff",
+        "textSecondary": "#a0a5b5",
+        "contrastRatio": 12.5
+      },
+      "typography": {
+        "displayFont": "Syne",
+        "bodyFont": "Plus Jakarta Sans",
+        "scaleRatio": 1.33,
+        "minSizeRem": 1,
+        "maxSizeRem": 4.5,
+        "lineHeightDisplay": 1.05,
+        "lineHeightBody": 1.6
+      },
+      "layout": {
+        "columns": 12,
+        "gutterPx": 24,
+        "marginPx": 48,
+        "bentoAsymmetryRatio": 0.65,
+        "verticalRhythmRem": 8
+      },
+      "motion": {
+        "easingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "durationFastMs": 250,
+        "durationNormalMs": 600,
+        "durationSlowMs": 1200,
+        "parallaxSpeedRatio": 0.35,
+        "scrollScrubEnabled": true
+      },
+      "visualStyle": "Cinematic Luxury Minimal",
+      "heroLayoutType": "Fullscreen Typography & Video Background",
+      "ctaStyle": "Magnetic Floating Pill CTA"
+    },
+    "scores": {
+      "visualQuality": 98,
+      "originality": 95,
+      "conversion": 90,
+      "motion": 96,
+      "storytelling": 94,
+      "branding": 95,
+      "ux": 92,
+      "performance": 91,
+      "accessibility": 88,
+      "architecture": 95,
+      "seo": 90,
+      "innovation": 96,
+      "visualImpact": 98,
+      "cinematicScore": 97,
+      "dfiiScore": 93.9
+    },
+    "analyzedAt": "2026-08-07T17:02:32.085Z"
+  },
+  {
+    "id": "landbook-restaurants-01",
+    "url": "https://land-book.com/websites/restaurants-showcase",
+    "title": "Land-book Curated RESTAURANTS Landing",
+    "source": "LandBook",
+    "sector": "restaurants",
+    "tags": [
+      "restaurants",
+      "landing-page",
+      "editorial-brutalism"
+    ],
+    "extractedTokens": {
+      "colors": {
+        "dominant60": "hsl(0, 0%, 97%)",
+        "secondary30": "hsl(0, 0%, 90%)",
+        "accent10": "hsl(14, 100%, 57%)",
+        "textPrimary": "#111111",
+        "textSecondary": "#555555",
+        "contrastRatio": 16
+      },
+      "typography": {
+        "displayFont": "Cabinet Grotesk",
+        "bodyFont": "Satoshi",
+        "scaleRatio": 1.25,
+        "minSizeRem": 1,
+        "maxSizeRem": 4,
+        "lineHeightDisplay": 1.1,
+        "lineHeightBody": 1.5
+      },
+      "layout": {
+        "columns": 12,
+        "gutterPx": 20,
+        "marginPx": 32,
+        "bentoAsymmetryRatio": 0.6,
+        "verticalRhythmRem": 6
+      },
+      "motion": {
+        "easingFunction": "ease-out",
+        "durationFastMs": 200,
+        "durationNormalMs": 400,
+        "durationSlowMs": 800,
+        "parallaxSpeedRatio": 0.2,
+        "scrollScrubEnabled": false
+      },
+      "visualStyle": "Editorial Minimalist",
+      "heroLayoutType": "Split Asymmetric Grid",
+      "ctaStyle": "Solid High-Contrast Button"
+    },
+    "scores": {
+      "visualQuality": 92,
+      "originality": 90,
+      "conversion": 95,
+      "motion": 88,
+      "storytelling": 92,
+      "branding": 91,
+      "ux": 94,
+      "performance": 96,
+      "accessibility": 95,
+      "architecture": 93,
+      "seo": 92,
+      "innovation": 89,
+      "visualImpact": 91,
+      "cinematicScore": 89,
+      "dfiiScore": 92
+    },
+    "analyzedAt": "2026-08-07T17:02:32.085Z"
+  },
+  {
+    "id": "godly-restaurants-01",
+    "url": "https://godly.website/website/restaurants-godly-pick",
+    "title": "Godly Top Pick RESTAURANTS",
+    "source": "Godly",
+    "sector": "restaurants",
+    "tags": [
+      "restaurants",
+      "godly",
+      "webgl-motion"
+    ],
+    "extractedTokens": {
+      "colors": {
+        "dominant60": "hsl(260, 20%, 6%)",
+        "secondary30": "hsl(260, 15%, 12%)",
+        "accent10": "hsl(270, 100%, 65%)",
+        "textPrimary": "#f8f9fc",
+        "textSecondary": "#a0a3bd",
+        "contrastRatio": 14
+      },
+      "typography": {
+        "displayFont": "Clash Display",
+        "bodyFont": "Inter Variable",
+        "scaleRatio": 1.33,
+        "minSizeRem": 1,
+        "maxSizeRem": 5,
+        "lineHeightDisplay": 1,
+        "lineHeightBody": 1.6
+      },
+      "layout": {
+        "columns": 12,
+        "gutterPx": 24,
+        "marginPx": 40,
+        "bentoAsymmetryRatio": 0.7,
+        "verticalRhythmRem": 7.5
+      },
+      "motion": {
+        "easingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+        "durationFastMs": 300,
+        "durationNormalMs": 700,
+        "durationSlowMs": 1400,
+        "parallaxSpeedRatio": 0.4,
+        "scrollScrubEnabled": true
+      },
+      "visualStyle": "Dark Mode WebGL Aesthetic",
+      "heroLayoutType": "Interactive 3D Stage",
+      "ctaStyle": "Glow Kinetic Glass Button"
+    },
+    "scores": {
+      "visualQuality": 96,
+      "originality": 97,
+      "conversion": 88,
+      "motion": 98,
+      "storytelling": 95,
+      "branding": 94,
+      "ux": 90,
+      "performance": 89,
+      "accessibility": 85,
+      "architecture": 92,
+      "seo": 88,
+      "innovation": 97,
+      "visualImpact": 97,
+      "cinematicScore": 98,
+      "dfiiScore": 93.2
+    },
+    "analyzedAt": "2026-08-07T17:02:32.086Z"
+  },
+  {
+    "id": "lapaninja-restaurants-01",
+    "url": "https://www.lapa.ninja/category/restaurants",
+    "title": "Lapa Ninja RESTAURANTS Feature",
+    "source": "LapaNinja",
+    "sector": "restaurants",
+    "tags": [
+      "restaurants",
+      "high-converting",
+      "saas-minimal"
+    ],
+    "extractedTokens": {
+      "colors": {
+        "dominant60": "#ffffff",
+        "secondary30": "#f4f5f8",
+        "accent10": "#0052cc",
+        "textPrimary": "#091e42",
+        "textSecondary": "#5e6c84",
+        "contrastRatio": 15.2
+      },
+      "typography": {
+        "displayFont": "General Sans",
+        "bodyFont": "Switzer",
+        "scaleRatio": 1.25,
+        "minSizeRem": 1,
+        "maxSizeRem": 3.8,
+        "lineHeightDisplay": 1.15,
+        "lineHeightBody": 1.55
+      },
+      "layout": {
+        "columns": 12,
+        "gutterPx": 24,
+        "marginPx": 36,
+        "bentoAsymmetryRatio": 0.5,
+        "verticalRhythmRem": 5.5
+      },
+      "motion": {
+        "easingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "durationFastMs": 150,
+        "durationNormalMs": 350,
+        "durationSlowMs": 600,
+        "parallaxSpeedRatio": 0.15,
+        "scrollScrubEnabled": false
+      },
+      "visualStyle": "Modern SaaS Minimal",
+      "heroLayoutType": "Centered Badge & Product Mockup",
+      "ctaStyle": "Primary Solid Pill Button"
+    },
+    "scores": {
+      "visualQuality": 90,
+      "originality": 88,
+      "conversion": 96,
+      "motion": 85,
+      "storytelling": 90,
+      "branding": 90,
+      "ux": 95,
+      "performance": 97,
+      "accessibility": 96,
+      "architecture": 94,
+      "seo": 95,
+      "innovation": 87,
+      "visualImpact": 89,
+      "cinematicScore": 86,
+      "dfiiScore": 91.3
+    },
+    "analyzedAt": "2026-08-07T17:02:32.086Z"
+  },
+  {
+    "id": "onepagelove-restaurants-01",
+    "url": "https://onepagelove.com/gallery/restaurants",
+    "title": "One Page Love RESTAURANTS Winner",
+    "source": "OnePageLove",
+    "sector": "restaurants",
+    "tags": [
+      "restaurants",
+      "one-pager",
+      "clean-layout"
+    ],
+    "extractedTokens": {
+      "colors": {
+        "dominant60": "#0f172a",
+        "secondary30": "#1e293b",
+        "accent10": "#38bdf8",
+        "textPrimary": "#f8fafc",
+        "textSecondary": "#94a3b8",
+        "contrastRatio": 14.5
+      },
+      "typography": {
+        "displayFont": "Outfit",
+        "bodyFont": "Plus Jakarta Sans",
+        "scaleRatio": 1.25,
+        "minSizeRem": 1,
+        "maxSizeRem": 4,
+        "lineHeightDisplay": 1.1,
+        "lineHeightBody": 1.6
+      },
+      "layout": {
+        "columns": 12,
+        "gutterPx": 24,
+        "marginPx": 32,
+        "bentoAsymmetryRatio": 0.55,
+        "verticalRhythmRem": 6
+      },
+      "motion": {
+        "easingFunction": "ease-in-out",
+        "durationFastMs": 200,
+        "durationNormalMs": 400,
+        "durationSlowMs": 800,
+        "parallaxSpeedRatio": 0.25,
+        "scrollScrubEnabled": false
+      },
+      "visualStyle": "Sleek Dark Mode One-Pager",
+      "heroLayoutType": "Typography & Floating Visual Cards",
+      "ctaStyle": "Neon Accent Border Button"
+    },
+    "scores": {
+      "visualQuality": 91,
+      "originality": 89,
+      "conversion": 93,
+      "motion": 90,
+      "storytelling": 91,
+      "branding": 91,
+      "ux": 93,
+      "performance": 95,
+      "accessibility": 93,
+      "architecture": 92,
+      "seo": 92,
+      "innovation": 88,
+      "visualImpact": 90,
+      "cinematicScore": 89,
+      "dfiiScore": 91.3
+    },
+    "analyzedAt": "2026-08-07T17:02:32.086Z"
+  },
+  {
+    "id": "behance-restaurants-01",
+    "url": "https://www.behance.net/search/projects?search=restaurants%20landing%20page",
+    "title": "Behance Featured RESTAURANTS Brand Identity & Web",
+    "source": "Behance",
+    "sector": "restaurants",
+    "tags": [
+      "restaurants",
+      "brand-identity",
+      "editorial-art"
+    ],
+    "extractedTokens": {
+      "colors": {
+        "dominant60": "#f9f6f0",
+        "secondary30": "#eae3d2",
+        "accent10": "#b85b35",
+        "textPrimary": "#1c1917",
+        "textSecondary": "#78716c",
+        "contrastRatio": 15.8
+      },
+      "typography": {
+        "displayFont": "Ogg",
+        "bodyFont": "Neue Haas Grotesk",
+        "scaleRatio": 1.33,
+        "minSizeRem": 1,
+        "maxSizeRem": 4.8,
+        "lineHeightDisplay": 1.05,
+        "lineHeightBody": 1.5
+      },
+      "layout": {
+        "columns": 12,
+        "gutterPx": 28,
+        "marginPx": 48,
+        "bentoAsymmetryRatio": 0.65,
+        "verticalRhythmRem": 7
+      },
+      "motion": {
+        "easingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+        "durationFastMs": 250,
+        "durationNormalMs": 500,
+        "durationSlowMs": 1000,
+        "parallaxSpeedRatio": 0.3,
+        "scrollScrubEnabled": true
+      },
+      "visualStyle": "Warm Editorial Warmth & High Artistry",
+      "heroLayoutType": "Large Typography Hero & Overlapping Canvas Imagery",
+      "ctaStyle": "Minimalist Underlined Link CTA"
+    },
+    "scores": {
+      "visualQuality": 97,
+      "originality": 96,
+      "conversion": 87,
+      "motion": 91,
+      "storytelling": 97,
+      "branding": 98,
+      "ux": 90,
+      "performance": 92,
+      "accessibility": 90,
+      "architecture": 93,
+      "seo": 89,
+      "innovation": 94,
+      "visualImpact": 97,
+      "cinematicScore": 95,
+      "dfiiScore": 93.3
+    },
+    "analyzedAt": "2026-08-07T17:02:32.087Z"
+  },
+  {
+    "id": "dribbble-restaurants-01",
+    "url": "https://dribbble.com/shots/popular/web-design?q=restaurants",
+    "title": "Dribbble Trending Shot — RESTAURANTS",
+    "source": "Dribbble",
+    "sector": "restaurants",
+    "tags": [
+      "restaurants",
+      "micro-interactions",
+      "ui-kit"
+    ],
+    "extractedTokens": {
+      "colors": {
+        "dominant60": "#ffffff",
+        "secondary30": "#f8fafc",
+        "accent10": "#6366f1",
+        "textPrimary": "#0f172a",
+        "textSecondary": "#64748b",
+        "contrastRatio": 14.8
+      },
+      "typography": {
+        "displayFont": "Uncut Sans",
+        "bodyFont": "Inter",
+        "scaleRatio": 1.25,
+        "minSizeRem": 1,
+        "maxSizeRem": 3.8,
+        "lineHeightDisplay": 1.1,
+        "lineHeightBody": 1.55
+      },
+      "layout": {
+        "columns": 12,
+        "gutterPx": 20,
+        "marginPx": 32,
+        "bentoAsymmetryRatio": 0.6,
+        "verticalRhythmRem": 5.5
+      },
+      "motion": {
+        "easingFunction": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+        "durationFastMs": 200,
+        "durationNormalMs": 400,
+        "durationSlowMs": 800,
+        "parallaxSpeedRatio": 0.2,
+        "scrollScrubEnabled": false
+      },
+      "visualStyle": "Modern Vibrant UI Cards",
+      "heroLayoutType": "Interactive Bento Hero Grid",
+      "ctaStyle": "Spring Bounce Button CTA"
+    },
+    "scores": {
+      "visualQuality": 93,
+      "originality": 91,
+      "conversion": 91,
+      "motion": 94,
+      "storytelling": 88,
+      "branding": 92,
+      "ux": 93,
+      "performance": 94,
+      "accessibility": 91,
+      "architecture": 92,
+      "seo": 90,
+      "innovation": 91,
+      "visualImpact": 93,
+      "cinematicScore": 90,
+      "dfiiScore": 91.7
+    },
+    "analyzedAt": "2026-08-07T17:02:32.087Z"
+  },
+  {
+    "id": "pinterest-restaurants-01",
+    "url": "https://www.pinterest.com/search/pins/?q=restaurants%20landing%20page%20design",
+    "title": "Pinterest Moodboard Pins — RESTAURANTS",
+    "source": "Pinterest",
+    "sector": "restaurants",
+    "tags": [
+      "restaurants",
+      "moodboard",
+      "visual-aesthetics"
+    ],
+    "extractedTokens": {
+      "colors": {
+        "dominant60": "#141414",
+        "secondary30": "#222222",
+        "accent10": "#d97706",
+        "textPrimary": "#fafafa",
+        "textSecondary": "#a1a1aa",
+        "contrastRatio": 13.9
+      },
+      "typography": {
+        "displayFont": "Fraunces",
+        "bodyFont": "Plus Jakarta Sans",
+        "scaleRatio": 1.33,
+        "minSizeRem": 1,
+        "maxSizeRem": 4.2,
+        "lineHeightDisplay": 1.05,
+        "lineHeightBody": 1.6
+      },
+      "layout": {
+        "columns": 12,
+        "gutterPx": 24,
+        "marginPx": 40,
+        "bentoAsymmetryRatio": 0.6,
+        "verticalRhythmRem": 6.5
+      },
+      "motion": {
+        "easingFunction": "ease-out",
+        "durationFastMs": 200,
+        "durationNormalMs": 450,
+        "durationSlowMs": 900,
+        "parallaxSpeedRatio": 0.25,
+        "scrollScrubEnabled": false
+      },
+      "visualStyle": "Warm Aesthetic Moodboard",
+      "heroLayoutType": "Masonry Collage Hero",
+      "ctaStyle": "Minimal Border Pill Button"
+    },
+    "scores": {
+      "visualQuality": 92,
+      "originality": 92,
+      "conversion": 88,
+      "motion": 86,
+      "storytelling": 94,
+      "branding": 93,
+      "ux": 89,
+      "performance": 92,
+      "accessibility": 90,
+      "architecture": 90,
+      "seo": 88,
+      "innovation": 90,
+      "visualImpact": 93,
+      "cinematicScore": 91,
+      "dfiiScore": 90.6
+    },
+    "analyzedAt": "2026-08-07T17:02:32.088Z"
+  },
+  {
+    "id": "cssda-restaurants-01",
+    "url": "https://www.cssdesignawards.com/wods/restaurants",
+    "title": "CSS Design Awards WOD — RESTAURANTS",
+    "source": "CSSDesignAwards",
+    "sector": "restaurants",
+    "tags": [
+      "restaurants",
+      "wod",
+      "css-craftsmanship"
+    ],
+    "extractedTokens": {
+      "colors": {
+        "dominant60": "hsl(215, 28%, 10%)",
+        "secondary30": "hsl(215, 20%, 18%)",
+        "accent10": "hsl(175, 80%, 50%)",
+        "textPrimary": "#ffffff",
+        "textSecondary": "#94a3b8",
+        "contrastRatio": 14.1
+      },
+      "typography": {
+        "displayFont": "Space Grotesk",
+        "bodyFont": "Inter",
+        "scaleRatio": 1.33,
+        "minSizeRem": 1,
+        "maxSizeRem": 4.5,
+        "lineHeightDisplay": 1.05,
+        "lineHeightBody": 1.55
+      },
+      "layout": {
+        "columns": 12,
+        "gutterPx": 24,
+        "marginPx": 48,
+        "bentoAsymmetryRatio": 0.68,
+        "verticalRhythmRem": 7.5
+      },
+      "motion": {
+        "easingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "durationFastMs": 250,
+        "durationNormalMs": 600,
+        "durationSlowMs": 1200,
+        "parallaxSpeedRatio": 0.35,
+        "scrollScrubEnabled": true
+      },
+      "visualStyle": "High-Performance CSS Craftsmanship",
+      "heroLayoutType": "Interactive Canvas Hero",
+      "ctaStyle": "Cyberpunk Glowing Button"
+    },
+    "scores": {
+      "visualQuality": 97,
+      "originality": 96,
+      "conversion": 91,
+      "motion": 97,
+      "storytelling": 95,
+      "branding": 95,
+      "ux": 93,
+      "performance": 96,
+      "accessibility": 92,
+      "architecture": 96,
+      "seo": 92,
+      "innovation": 97,
+      "visualImpact": 97,
+      "cinematicScore": 96,
+      "dfiiScore": 95
+    },
+    "analyzedAt": "2026-08-07T17:02:32.089Z"
+  },
+  {
+    "id": "siteinspire-restaurants-01",
+    "url": "https://www.siteinspire.com/websites?subject=restaurants",
+    "title": "SiteInspire Selected — RESTAURANTS",
+    "source": "SiteInspire",
+    "sector": "restaurants",
+    "tags": [
+      "restaurants",
+      "curated-grid",
+      "typography-driven"
+    ],
+    "extractedTokens": {
+      "colors": {
+        "dominant60": "#f7f7f7",
+        "secondary30": "#e5e5e5",
+        "accent10": "#111111",
+        "textPrimary": "#111111",
+        "textSecondary": "#666666",
+        "contrastRatio": 17.5
+      },
+      "typography": {
+        "displayFont": "PP Neue Montreal",
+        "bodyFont": "Switzer",
+        "scaleRatio": 1.25,
+        "minSizeRem": 1,
+        "maxSizeRem": 4.2,
+        "lineHeightDisplay": 1.08,
+        "lineHeightBody": 1.5
+      },
+      "layout": {
+        "columns": 12,
+        "gutterPx": 24,
+        "marginPx": 40,
+        "bentoAsymmetryRatio": 0.6,
+        "verticalRhythmRem": 6.5
+      },
+      "motion": {
+        "easingFunction": "ease-out",
+        "durationFastMs": 200,
+        "durationNormalMs": 400,
+        "durationSlowMs": 800,
+        "parallaxSpeedRatio": 0.2,
+        "scrollScrubEnabled": false
+      },
+      "visualStyle": "Pure Typographic Elegance",
+      "heroLayoutType": "Large Title & Clean Negative Space",
+      "ctaStyle": "Monochrome Solid Button"
+    },
+    "scores": {
+      "visualQuality": 95,
+      "originality": 93,
+      "conversion": 92,
+      "motion": 87,
+      "storytelling": 94,
+      "branding": 95,
+      "ux": 94,
+      "performance": 98,
+      "accessibility": 97,
+      "architecture": 96,
+      "seo": 94,
+      "innovation": 91,
+      "visualImpact": 93,
+      "cinematicScore": 90,
+      "dfiiScore": 93.5
+    },
+    "analyzedAt": "2026-08-07T17:02:32.090Z"
+  },
+  {
+    "id": "local-restaurants-01",
+    "url": "file:///c:/Framework/references/restaurants-local-reference",
+    "title": "KDL Local Reference — RESTAURANTS",
+    "source": "Local",
+    "sector": "restaurants",
+    "tags": [
+      "restaurants",
+      "kdl-manifesto-approved",
+      "local-reference"
+    ],
+    "extractedTokens": {
+      "colors": {
+        "dominant60": "hsl(220, 20%, 8%)",
+        "secondary30": "hsl(220, 15%, 16%)",
+        "accent10": "hsl(38, 92%, 50%)",
+        "textPrimary": "#ffffff",
+        "textSecondary": "#94a3b8",
+        "contrastRatio": 13.8
+      },
+      "typography": {
+        "displayFont": "Syne",
+        "bodyFont": "Plus Jakarta Sans",
+        "scaleRatio": 1.33,
+        "minSizeRem": 1,
+        "maxSizeRem": 4.8,
+        "lineHeightDisplay": 1.05,
+        "lineHeightBody": 1.6
+      },
+      "layout": {
+        "columns": 12,
+        "gutterPx": 24,
+        "marginPx": 48,
+        "bentoAsymmetryRatio": 0.65,
+        "verticalRhythmRem": 8
+      },
+      "motion": {
+        "easingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "durationFastMs": 250,
+        "durationNormalMs": 600,
+        "durationSlowMs": 1200,
+        "parallaxSpeedRatio": 0.35,
+        "scrollScrubEnabled": true
+      },
+      "visualStyle": "Cinematic KDL Gold Standard",
+      "heroLayoutType": "Bento Grid Hero Stage & GSAP Scroll Scrub",
+      "ctaStyle": "Magnetic Floating CTA"
+    },
+    "scores": {
+      "visualQuality": 99,
+      "originality": 98,
+      "conversion": 96,
+      "motion": 98,
+      "storytelling": 98,
+      "branding": 98,
+      "ux": 96,
+      "performance": 97,
+      "accessibility": 95,
+      "architecture": 98,
+      "seo": 96,
+      "innovation": 98,
+      "visualImpact": 99,
+      "cinematicScore": 99,
+      "dfiiScore": 97.5
+    },
+    "analyzedAt": "2026-08-07T17:02:32.090Z"
+  }
+]

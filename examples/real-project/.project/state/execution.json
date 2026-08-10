@@ -1,0 +1,58 @@
+{
+  "executionId": "exec-6d224a58",
+  "pipelineId": "landing-page",
+  "projectName": "examples/real-project",
+  "state": "COMPLETED",
+  "stageCheckpoints": {
+    "01-bootstrap": {
+      "stageId": "01-bootstrap",
+      "status": "COMPLETED",
+      "attempts": 1,
+      "durationMs": 17,
+      "completedAt": "2026-08-10T11:02:09.117Z"
+    },
+    "02-seo-research": {
+      "stageId": "02-seo-research",
+      "status": "COMPLETED",
+      "attempts": 1,
+      "durationMs": 1,
+      "completedAt": "2026-08-10T11:02:09.119Z"
+    },
+    "03-competitor-audit": {
+      "stageId": "03-competitor-audit",
+      "status": "COMPLETED",
+      "attempts": 1,
+      "durationMs": 1,
+      "completedAt": "2026-08-10T11:02:09.120Z"
+    },
+    "04-inspiration": {
+      "stageId": "04-inspiration",
+      "status": "COMPLETED",
+      "attempts": 1,
+      "durationMs": 2,
+      "completedAt": "2026-08-10T11:02:09.124Z"
+    },
+    "05-creative-direction": {
+      "stageId": "05-creative-direction",
+      "status": "COMPLETED",
+      "attempts": 1,
+      "durationMs": 2,
+      "completedAt": "2026-08-10T11:02:09.127Z"
+    },
+    "06-builder": {
+      "stageId": "06-builder",
+      "status": "COMPLETED",
+      "attempts": 1,
+      "durationMs": 3,
+      "completedAt": "2026-08-10T11:02:09.131Z"
+    },
+    "07-review-autofix-loop": {
+      "stageId": "07-review-autofix-loop",
+      "status": "COMPLETED",
+      "attempts": 1,
+      "durationMs": 4,
+      "completedAt": "2026-08-10T11:02:09.136Z"
+    }
+  },
+  "updatedAt": "2026-08-10T11:02:09.099Z"
+}

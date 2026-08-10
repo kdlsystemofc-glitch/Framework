@@ -1,0 +1,35 @@
+{
+  "projectName": "examples/real-project",
+  "entries": [
+    {
+      "timestamp": "2026-08-10T11:02:09.126Z",
+      "topic": "Color Palette Strategy",
+      "decision": "Dominant HSL #f7f7f7 + Accent #111111",
+      "technicalJustification": "Adheres to 60-30-10 color balance rule with contrast ratio >= 12.0 for WCAG AAA accessibility.",
+      "alternativesRejected": [
+        "Monochrome Grayscale",
+        "Saturated Rainbow Gradient"
+      ]
+    },
+    {
+      "timestamp": "2026-08-10T11:02:09.126Z",
+      "topic": "Layout Architecture",
+      "decision": "12-Column Asymmetric Bento Grid (Ratio 0.68)",
+      "technicalJustification": "Breaks rigid 3-column AI template patterns and creates visual rhythm.",
+      "alternativesRejected": [
+        "Standard 3-Card Equal Grid",
+        "Centered Text Block Wall"
+      ]
+    },
+    {
+      "timestamp": "2026-08-10T11:02:09.126Z",
+      "topic": "Motion Physics",
+      "decision": "GSAP ScrollScrub + Easing (cubic-bezier(0.16, 1, 0.3, 1))",
+      "technicalJustification": "Delivers 60fps cinematic fluidity without lag or browser jank.",
+      "alternativesRejected": [
+        "Linear CSS Transitions",
+        "Auto-playing Marquee Carousel"
+      ]
+    }
+  ]
+}

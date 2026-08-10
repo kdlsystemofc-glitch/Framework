@@ -1,0 +1,35 @@
+{
+  "name": "@kdl/reviewer",
+  "version": "1.0.0",
+  "description": "Review Engine & Autonomous Quality Assurance for KDL Landing Framework",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --import tsx scripts/test-runner.mjs"
+  },
+  "keywords": [
+    "kdl",
+    "reviewer",
+    "quality-assurance",
+    "lighthouse",
+    "quality-gates"
+  ],
+  "author": "KDL System",
+  "license": "Proprietary",
+  "dependencies": {
+    "@kdl/ai-director": "file:../ai-director",
+    "@kdl/bootstrap": "file:../bootstrap",
+    "@kdl/builder": "file:../builder",
+    "@kdl/inspiration": "file:../inspiration"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

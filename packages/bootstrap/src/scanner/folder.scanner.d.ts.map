@@ -1,0 +1,1 @@
+{"version":3,"file":"folder.scanner.d.ts","sourceRoot":"","sources":["folder.scanner.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,YAAY,EAAE,iBAAiB,EAAE,MAAM,6BAA6B,CAAC;AAK9E,qBAAa,aAAa;IACxB,OAAO,CAAC,QAAQ,CAAS;IAEzB,YAAY,QAAQ,EAAE,MAAM,EAE3B;IAEM,IAAI,IAAI;QAAE,KAAK,EAAE,YAAY,EAAE,CAAC;QAAC,WAAW,EAAE,iBAAiB,EAAE,CAAA;KAAE,CA+CzE;CACF"}

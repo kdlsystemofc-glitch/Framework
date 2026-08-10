@@ -1,0 +1,12 @@
+{
+  "projectName": "real-project",
+  "bootstrapCompleted": true,
+  "bootstrapCompletedAt": "2026-08-10T11:02:09.115Z",
+  "currentStage": "BOOTSTRAP_COMPLETE",
+  "validationPassed": true,
+  "validationScore": 90,
+  "missingRequiredFiles": [],
+  "recommendedActions": [
+    "[WARNING] Provide high-quality brand images inside assets/ for authentic storytelling."
+  ]
+}

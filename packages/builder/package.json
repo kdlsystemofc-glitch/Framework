@@ -1,0 +1,35 @@
+{
+  "name": "@kdl/builder",
+  "version": "1.0.0",
+  "description": "Universal Builder Engine for KDL Landing Framework",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --import tsx scripts/test-runner.mjs"
+  },
+  "keywords": [
+    "kdl",
+    "builder",
+    "html5",
+    "gsap",
+    "lenis",
+    "seo"
+  ],
+  "author": "KDL System",
+  "license": "Proprietary",
+  "dependencies": {
+    "@kdl/ai-director": "file:../ai-director",
+    "@kdl/bootstrap": "file:../bootstrap",
+    "@kdl/inspiration": "file:../inspiration"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

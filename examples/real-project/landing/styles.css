@@ -1,0 +1,50 @@
+/* KDL FRAMEWORK — AUTOMATED DESIGN TOKENS */
+:root {
+  --color-dominant-60: #f7f7f7;
+  --color-secondary-30: #e5e5e5;
+  --color-accent-10: #111111;
+  --color-text-primary: #111111;
+  --color-text-secondary: #666666;
+
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --typography-scale: 1.33;
+
+  --grid-columns: 12;
+  --grid-gutter: 24px;
+  --grid-margin: 48px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background-color: var(--color-dominant-60);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .display-heading {
+  font-family: var(--font-display);
+  line-height: 1.05;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  padding: 0 var(--grid-margin);
+}
+
+.btn-primary {
+  background-color: var(--color-accent-10);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+}

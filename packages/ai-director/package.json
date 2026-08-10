@@ -1,0 +1,33 @@
+{
+  "name": "@kdl/ai-director",
+  "version": "1.0.0",
+  "description": "AI Director Engine — Central Brain for KDL Landing Framework",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --import tsx scripts/test-runner.mjs"
+  },
+  "keywords": [
+    "kdl",
+    "ai-director",
+    "creative-dna",
+    "decision-engine",
+    "dfii-score"
+  ],
+  "author": "KDL System",
+  "license": "Proprietary",
+  "dependencies": {
+    "@kdl/bootstrap": "file:../bootstrap",
+    "@kdl/inspiration": "file:../inspiration"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

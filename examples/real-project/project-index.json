@@ -1,0 +1,377 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-08-10T11:02:09.115Z",
+  "projectPath": "C:\\Framework\\examples\\real-project",
+  "projectName": "real-project",
+  "totalFiles": 21,
+  "totalDirectories": 15,
+  "totalSizeBytes": 28787,
+  "files": [
+    {
+      "relativePath": "assets/logo.svg",
+      "absolutePath": "C:/Framework/examples/real-project/assets/logo.svg",
+      "filename": "logo.svg",
+      "extension": "svg",
+      "sizeBytes": 221,
+      "sha256": "8d9d8a01a8c93f775587bdcd5c16187bd033ca36ea2ad97595f0864de2bbc043",
+      "createdAt": "2026-08-10T10:59:20.002Z",
+      "modifiedAt": "2026-08-10T10:59:20.002Z",
+      "category": "Logo",
+      "mimeType": "image/svg+xml",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "briefing/briefing.json",
+      "absolutePath": "C:/Framework/examples/real-project/briefing/briefing.json",
+      "filename": "briefing.json",
+      "extension": "json",
+      "sizeBytes": 403,
+      "sha256": "7a8347b8d2c2eef19da67257f1f035b555ddab3f6f1c8c23b3713e04bff4ffb4",
+      "createdAt": "2026-08-10T10:59:13.645Z",
+      "modifiedAt": "2026-08-10T10:59:13.646Z",
+      "category": "Briefing",
+      "mimeType": "application/json",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "CLIENT_PROFILE.md",
+      "absolutePath": "C:/Framework/examples/real-project/CLIENT_PROFILE.md",
+      "filename": "CLIENT_PROFILE.md",
+      "extension": "md",
+      "sizeBytes": 159,
+      "sha256": "5b09a24194496000f6bca9256a202c53ce0eb92ca163253a24e6285a8af41c1e",
+      "createdAt": "2026-08-10T10:59:16.893Z",
+      "modifiedAt": "2026-08-10T11:00:57.757Z",
+      "category": "Document",
+      "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "design/creative-dna.json",
+      "absolutePath": "C:/Framework/examples/real-project/design/creative-dna.json",
+      "filename": "creative-dna.json",
+      "extension": "json",
+      "sizeBytes": 1600,
+      "sha256": "bd18c70821c270b69313f5111c5739486f3705e92bd1522cdff0b25127aeb2ed",
+      "createdAt": "2026-08-10T11:00:30.640Z",
+      "modifiedAt": "2026-08-10T11:00:57.765Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "design/decision-logs.json",
+      "absolutePath": "C:/Framework/examples/real-project/design/decision-logs.json",
+      "filename": "decision-logs.json",
+      "extension": "json",
+      "sizeBytes": 1237,
+      "sha256": "69eefab86056712913c71a0f0f89db1d3f691be9c38ff5a4046671e46d3cb431",
+      "createdAt": "2026-08-10T11:00:30.640Z",
+      "modifiedAt": "2026-08-10T11:00:57.766Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "EXECUTION_PLAN.md",
+      "absolutePath": "C:/Framework/examples/real-project/EXECUTION_PLAN.md",
+      "filename": "EXECUTION_PLAN.md",
+      "extension": "md",
+      "sizeBytes": 177,
+      "sha256": "11225cd2d1271073937707d3d06f87a0435a47372ca3d1920b6cf5ea307fe8d7",
+      "createdAt": "2026-08-10T11:00:30.631Z",
+      "modifiedAt": "2026-08-10T11:00:57.757Z",
+      "category": "Document",
+      "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "landing/app.js",
+      "absolutePath": "C:/Framework/examples/real-project/landing/app.js",
+      "filename": "app.js",
+      "extension": "js",
+      "sizeBytes": 562,
+      "sha256": "6be7b2c4531d8cf5413b8dd3cfbfb72dd74bdeec3dd0f6302718ff1f0492d001",
+      "createdAt": "2026-08-10T11:00:30.646Z",
+      "modifiedAt": "2026-08-10T11:00:57.769Z",
+      "category": "Unknown",
+      "mimeType": "application/octet-stream",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "landing/index.html",
+      "absolutePath": "C:/Framework/examples/real-project/landing/index.html",
+      "filename": "index.html",
+      "extension": "html",
+      "sizeBytes": 3653,
+      "sha256": "656c71bd936752de9ecaa38008962bbcec43e6af1adb72fb84586d20ea33886f",
+      "createdAt": "2026-08-10T11:00:30.645Z",
+      "modifiedAt": "2026-08-10T11:00:57.769Z",
+      "category": "Unknown",
+      "mimeType": "application/octet-stream",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "landing/public/robots.txt",
+      "absolutePath": "C:/Framework/examples/real-project/landing/public/robots.txt",
+      "filename": "robots.txt",
+      "extension": "txt",
+      "sizeBytes": 80,
+      "sha256": "5ff9a4c1050212468d1b9e891c154db2417378d43fa9152e9ef84ea0d01a8424",
+      "createdAt": "2026-08-10T11:00:30.646Z",
+      "modifiedAt": "2026-08-10T11:00:57.770Z",
+      "category": "Document",
+      "mimeType": "text/plain",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "landing/public/sitemap.xml",
+      "absolutePath": "C:/Framework/examples/real-project/landing/public/sitemap.xml",
+      "filename": "sitemap.xml",
+      "extension": "xml",
+      "sizeBytes": 241,
+      "sha256": "81419859033c4ddb79755c9a8119bdeb49ae9eaf8c4fb5b6c04b4b905a25a2b1",
+      "createdAt": "2026-08-10T11:00:30.646Z",
+      "modifiedAt": "2026-08-10T11:00:57.770Z",
+      "category": "Unknown",
+      "mimeType": "application/octet-stream",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "landing/styles.css",
+      "absolutePath": "C:/Framework/examples/real-project/landing/styles.css",
+      "filename": "styles.css",
+      "extension": "css",
+      "sizeBytes": 1124,
+      "sha256": "cb73c6dee03f673c813877e372b3f171de3172f4cb29f36928087ad93874a70c",
+      "createdAt": "2026-08-10T11:00:30.645Z",
+      "modifiedAt": "2026-08-10T11:00:57.769Z",
+      "category": "Unknown",
+      "mimeType": "application/octet-stream",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "project-index.json",
+      "absolutePath": "C:/Framework/examples/real-project/project-index.json",
+      "filename": "project-index.json",
+      "extension": "json",
+      "sizeBytes": 13314,
+      "sha256": "c9c52e98159128d664c5befc04422812eea19c999e2b33294630a167e7f7e47b",
+      "createdAt": "2026-08-10T11:00:30.629Z",
+      "modifiedAt": "2026-08-10T11:00:57.755Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "PROJECT_ANALYSIS.md",
+      "absolutePath": "C:/Framework/examples/real-project/PROJECT_ANALYSIS.md",
+      "filename": "PROJECT_ANALYSIS.md",
+      "extension": "md",
+      "sizeBytes": 481,
+      "sha256": "8c215b4713eb1bcfcbbf9b70bb4a7b7d5eadf7e59ec2857d7a6dea99cdbe4d46",
+      "createdAt": "2026-08-10T11:00:30.630Z",
+      "modifiedAt": "2026-08-10T11:00:57.756Z",
+      "category": "Document",
+      "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "PROJECT_STATUS.json",
+      "absolutePath": "C:/Framework/examples/real-project/PROJECT_STATUS.json",
+      "filename": "PROJECT_STATUS.json",
+      "extension": "json",
+      "sizeBytes": 366,
+      "sha256": "c11649d22b466fa1878d31cae4be2e8af45120e88cc0740258c736d508ae131a",
+      "createdAt": "2026-08-10T11:00:30.629Z",
+      "modifiedAt": "2026-08-10T11:00:57.756Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "PROJECT_STRUCTURE.md",
+      "absolutePath": "C:/Framework/examples/real-project/PROJECT_STRUCTURE.md",
+      "filename": "PROJECT_STRUCTURE.md",
+      "extension": "md",
+      "sizeBytes": 1517,
+      "sha256": "957ca420720d51ef4edfcf987482aeac0e0e022ca7400b77f7acde2853d677fb",
+      "createdAt": "2026-08-10T11:00:30.630Z",
+      "modifiedAt": "2026-08-10T11:00:57.756Z",
+      "category": "Document",
+      "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "references/inspiration-links.json",
+      "absolutePath": "C:/Framework/examples/real-project/references/inspiration-links.json",
+      "filename": "inspiration-links.json",
+      "extension": "json",
+      "sizeBytes": 155,
+      "sha256": "28c4d6fb93e19bce347b9eda8932635547add16ce014d157b3b7ff1a9907964c",
+      "createdAt": "2026-08-10T10:59:23.295Z",
+      "modifiedAt": "2026-08-10T10:59:23.295Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "reports/bootstrap-report.md",
+      "absolutePath": "C:/Framework/examples/real-project/reports/bootstrap-report.md",
+      "filename": "bootstrap-report.md",
+      "extension": "md",
+      "sizeBytes": 662,
+      "sha256": "7d780ab78af472e1ec6d3fe08c7c70a1ca4b8d6b1be92e0e67ad0fb9e81a7e6b",
+      "createdAt": "2026-08-10T11:00:30.631Z",
+      "modifiedAt": "2026-08-10T11:00:57.757Z",
+      "category": "Document",
+      "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "reports/build-report.md",
+      "absolutePath": "C:/Framework/examples/real-project/reports/build-report.md",
+      "filename": "build-report.md",
+      "extension": "md",
+      "sizeBytes": 223,
+      "sha256": "953840be0f0e87c65cc734387db33c8c7043fb5f6f496f79fd37063909aea701",
+      "createdAt": "2026-08-10T11:00:30.647Z",
+      "modifiedAt": "2026-08-10T11:00:57.770Z",
+      "category": "Document",
+      "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "reports/execution-report.json",
+      "absolutePath": "C:/Framework/examples/real-project/reports/execution-report.json",
+      "filename": "execution-report.json",
+      "extension": "json",
+      "sizeBytes": 319,
+      "sha256": "e0f53f1107c998a23c8442ab4e9b16f39a3d5c7b44d089bc6ac2dfe06ec94a54",
+      "createdAt": "2026-08-10T11:00:30.655Z",
+      "modifiedAt": "2026-08-10T11:00:57.777Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "reports/EXECUTION_REPORT.md",
+      "absolutePath": "C:/Framework/examples/real-project/reports/EXECUTION_REPORT.md",
+      "filename": "EXECUTION_REPORT.md",
+      "extension": "md",
+      "sizeBytes": 849,
+      "sha256": "1f2e43e52af0a666f55f8b24340fdfd437725edc6debd874ab351f31dea0117f",
+      "createdAt": "2026-08-10T11:00:30.656Z",
+      "modifiedAt": "2026-08-10T11:00:57.777Z",
+      "category": "Document",
+      "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "reports/FINAL_AUDIT.md",
+      "absolutePath": "C:/Framework/examples/real-project/reports/FINAL_AUDIT.md",
+      "filename": "FINAL_AUDIT.md",
+      "extension": "md",
+      "sizeBytes": 1444,
+      "sha256": "39d11df08773ba73bafe546bbf48677c987aae5bafb59758709e48ae038246b0",
+      "createdAt": "2026-08-10T11:00:30.653Z",
+      "modifiedAt": "2026-08-10T11:00:57.774Z",
+      "category": "Document",
+      "mimeType": "text/markdown",
+      "isZeroByte": false
+    }
+  ],
+  "directories": [
+    {
+      "relativePath": "assets",
+      "absolutePath": "C:/Framework/examples/real-project/assets",
+      "name": "assets",
+      "childrenCount": 1
+    },
+    {
+      "relativePath": "audit",
+      "absolutePath": "C:/Framework/examples/real-project/audit",
+      "name": "audit",
+      "childrenCount": 0
+    },
+    {
+      "relativePath": "briefing",
+      "absolutePath": "C:/Framework/examples/real-project/briefing",
+      "name": "briefing",
+      "childrenCount": 1
+    },
+    {
+      "relativePath": "build",
+      "absolutePath": "C:/Framework/examples/real-project/build",
+      "name": "build",
+      "childrenCount": 0
+    },
+    {
+      "relativePath": "copy",
+      "absolutePath": "C:/Framework/examples/real-project/copy",
+      "name": "copy",
+      "childrenCount": 0
+    },
+    {
+      "relativePath": "deploy",
+      "absolutePath": "C:/Framework/examples/real-project/deploy",
+      "name": "deploy",
+      "childrenCount": 0
+    },
+    {
+      "relativePath": "design",
+      "absolutePath": "C:/Framework/examples/real-project/design",
+      "name": "design",
+      "childrenCount": 2
+    },
+    {
+      "relativePath": "landing",
+      "absolutePath": "C:/Framework/examples/real-project/landing",
+      "name": "landing",
+      "childrenCount": 5
+    },
+    {
+      "relativePath": "landing/public",
+      "absolutePath": "C:/Framework/examples/real-project/landing/public",
+      "name": "public",
+      "childrenCount": 2
+    },
+    {
+      "relativePath": "landing/src",
+      "absolutePath": "C:/Framework/examples/real-project/landing/src",
+      "name": "src",
+      "childrenCount": 0
+    },
+    {
+      "relativePath": "motion",
+      "absolutePath": "C:/Framework/examples/real-project/motion",
+      "name": "motion",
+      "childrenCount": 0
+    },
+    {
+      "relativePath": "output",
+      "absolutePath": "C:/Framework/examples/real-project/output",
+      "name": "output",
+      "childrenCount": 0
+    },
+    {
+      "relativePath": "references",
+      "absolutePath": "C:/Framework/examples/real-project/references",
+      "name": "references",
+      "childrenCount": 1
+    },
+    {
+      "relativePath": "reports",
+      "absolutePath": "C:/Framework/examples/real-project/reports",
+      "name": "reports",
+      "childrenCount": 5
+    },
+    {
+      "relativePath": "temp",
+      "absolutePath": "C:/Framework/examples/real-project/temp",
+      "name": "temp",
+      "childrenCount": 0
+    }
+  ],
+  "duplicateFiles": []
+}

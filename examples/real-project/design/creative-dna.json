@@ -1,0 +1,51 @@
+{
+  "projectName": "examples/real-project",
+  "sector": "restaurants",
+  "concept": "Uncompromising Cinematic KDL Gold Standard Experience",
+  "visualStyle": "Cinematic KDL Gold Standard",
+  "dominantEmotion": "Exclusivity & High-Trust Mastery",
+  "archetypes": [
+    "The Ruler",
+    "The Creator",
+    "The Magician"
+  ],
+  "keywords": [
+    "cinematic",
+    "bento-grid",
+    "asymmetric",
+    "high-performance",
+    "frictionless"
+  ],
+  "referencesUsed": [
+    "KDL Local Reference — RESTAURANTS",
+    "CSS Design Awards WOD — RESTAURANTS",
+    "Awwwards SOTD RESTAURANTS Masterpiece",
+    "SiteInspire Selected — RESTAURANTS",
+    "Behance Featured RESTAURANTS Brand Identity & Web"
+  ],
+  "principlesAdopted": [
+    "60-30-10 HSL Color Balance",
+    "Modular Fluid Typography Scale",
+    "Anti-AI Generic Cliché Enforcement",
+    "Bento Grid Asymmetrical Layout",
+    "GSAP Inertial Scroll Physics"
+  ],
+  "decisionsTaken": [
+    {
+      "category": "Visual Style",
+      "decision": "Cinematic KDL Gold Standard",
+      "justification": "Selected based on top DFII award benchmarks to maximize perception of exclusivity."
+    },
+    {
+      "category": "Typography Pairing",
+      "decision": "Syne + Plus Jakarta Sans",
+      "justification": "Provides ultra-sharp editorial contrast and high mobile readability."
+    },
+    {
+      "category": "Hero Stage",
+      "decision": "Bento Grid Hero Stage & GSAP Scroll Scrub",
+      "justification": "Captures user attention in first 2 seconds without boilerplate AI cards."
+    }
+  ],
+  "createdAt": "2026-08-10T11:02:09.126Z"
+}
