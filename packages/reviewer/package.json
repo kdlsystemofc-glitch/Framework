@@ -24,7 +24,8 @@
     "@kdl/ai-director": "workspace:*",
     "@kdl/bootstrap": "workspace:*",
     "@kdl/builder": "workspace:*",
-    "@kdl/inspiration": "workspace:*"
+    "@kdl/inspiration": "workspace:*",
+    "playwright": "^1.42.0"
   },
   "devDependencies": {
     "@types/node": "^20.19.43",

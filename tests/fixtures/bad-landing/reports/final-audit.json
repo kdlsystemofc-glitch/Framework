@@ -1,0 +1,326 @@
+{
+  "projectName": "Bad Landing Test Project",
+  "projectPath": "C:\\Framework\\tests\\fixtures\\bad-landing",
+  "iterationCount": 1,
+  "overallScore": 48,
+  "measuredGatesCount": 3,
+  "passedGatesCount": 0,
+  "failedGatesCount": 3,
+  "notMeasuredGatesCount": 4,
+  "auditorResults": [
+    {
+      "auditorName": "ContentFidelityAuditor",
+      "score": 60,
+      "issues": [
+        {
+          "id": "cf-missing-brand",
+          "auditorName": "ContentFidelityAuditor",
+          "severity": "critical",
+          "message": "Client business name \"Real Client Name\" not found in landing page HTML",
+          "suggestion": "Ensure client business name is rendered in header or hero",
+          "autoFixable": false
+        }
+      ],
+      "autoFixesApplied": 0,
+      "measurementType": "RULE_BASED",
+      "evidence": []
+    },
+    {
+      "auditorName": "AssetFidelityAuditor",
+      "score": 100,
+      "issues": [],
+      "autoFixesApplied": 0,
+      "measurementType": "RULE_BASED",
+      "evidence": [
+        "Found 2 <img> elements in HTML."
+      ]
+    },
+    {
+      "auditorName": "BrandFidelityAuditor",
+      "score": 0,
+      "issues": [
+        {
+          "id": "bf-1",
+          "auditorName": "BrandFidelityAuditor",
+          "severity": "critical",
+          "message": "CSS file missing",
+          "suggestion": "Generate landing/styles.css",
+          "autoFixable": false
+        }
+      ],
+      "autoFixesApplied": 0,
+      "measurementType": "RULE_BASED"
+    },
+    {
+      "auditorName": "CopyFidelityAuditor",
+      "score": 100,
+      "issues": [],
+      "autoFixesApplied": 0,
+      "measurementType": "RULE_BASED",
+      "evidence": []
+    },
+    {
+      "auditorName": "UIStructureAuditor",
+      "score": 15,
+      "issues": [
+        {
+          "id": "uis-no-header",
+          "auditorName": "UIStructureAuditor",
+          "severity": "warning",
+          "message": "Missing <header> landmark",
+          "suggestion": "Wrap top navigation in <header>",
+          "autoFixable": true
+        },
+        {
+          "id": "uis-no-main",
+          "auditorName": "UIStructureAuditor",
+          "severity": "warning",
+          "message": "Missing <main> landmark",
+          "suggestion": "Wrap main page sections in <main>",
+          "autoFixable": true
+        },
+        {
+          "id": "uis-no-footer",
+          "auditorName": "UIStructureAuditor",
+          "severity": "warning",
+          "message": "Missing <footer> landmark",
+          "suggestion": "Wrap footer links in <footer>",
+          "autoFixable": true
+        },
+        {
+          "id": "uis-no-h1",
+          "auditorName": "UIStructureAuditor",
+          "severity": "critical",
+          "message": "Missing <h1> primary heading",
+          "suggestion": "Add a single primary <h1> in hero section",
+          "autoFixable": true
+        }
+      ],
+      "autoFixesApplied": 0,
+      "measurementType": "RULE_BASED",
+      "evidence": []
+    },
+    {
+      "auditorName": "InteractionAuditor",
+      "score": 100,
+      "issues": [],
+      "autoFixesApplied": 0,
+      "measurementType": "RULE_BASED",
+      "evidence": [
+        "Found 1 links in HTML."
+      ]
+    }
+  ],
+  "qualityGates": [
+    {
+      "id": "gate-performance",
+      "name": "Performance Gate",
+      "status": "NOT_MEASURED",
+      "minRequiredScore": 90,
+      "passed": false,
+      "measurementType": "LIGHTHOUSE",
+      "evidence": [
+        "Lighthouse performance execution was not available or completed with errors."
+      ],
+      "issues": [
+        {
+          "id": "gate-perf-nm",
+          "auditorName": "GateValidator",
+          "severity": "warning",
+          "message": "Performance gate could not be measured",
+          "suggestion": "Install chrome/lighthouse dependencies",
+          "autoFixable": false
+        }
+      ],
+      "timestamp": "2026-08-11T13:32:04.730Z"
+    },
+    {
+      "id": "gate-accessibility",
+      "name": "Accessibility Gate (WCAG 2.2)",
+      "status": "FAIL",
+      "score": 15,
+      "minRequiredScore": 95,
+      "passed": false,
+      "measurementType": "RULE_BASED",
+      "evidence": [
+        "Accessibility score: 15/100"
+      ],
+      "issues": [
+        {
+          "id": "uis-no-header",
+          "auditorName": "UIStructureAuditor",
+          "severity": "warning",
+          "message": "Missing <header> landmark",
+          "suggestion": "Wrap top navigation in <header>",
+          "autoFixable": true
+        },
+        {
+          "id": "uis-no-main",
+          "auditorName": "UIStructureAuditor",
+          "severity": "warning",
+          "message": "Missing <main> landmark",
+          "suggestion": "Wrap main page sections in <main>",
+          "autoFixable": true
+        },
+        {
+          "id": "uis-no-footer",
+          "auditorName": "UIStructureAuditor",
+          "severity": "warning",
+          "message": "Missing <footer> landmark",
+          "suggestion": "Wrap footer links in <footer>",
+          "autoFixable": true
+        },
+        {
+          "id": "uis-no-h1",
+          "auditorName": "UIStructureAuditor",
+          "severity": "critical",
+          "message": "Missing <h1> primary heading",
+          "suggestion": "Add a single primary <h1> in hero section",
+          "autoFixable": true
+        }
+      ],
+      "timestamp": "2026-08-11T13:32:04.730Z"
+    },
+    {
+      "id": "gate-seo",
+      "name": "SEO Gate",
+      "status": "FAIL",
+      "score": 60,
+      "minRequiredScore": 95,
+      "passed": false,
+      "measurementType": "RULE_BASED",
+      "evidence": [
+        "SEO score: 60/100"
+      ],
+      "issues": [
+        {
+          "id": "cf-missing-brand",
+          "auditorName": "ContentFidelityAuditor",
+          "severity": "critical",
+          "message": "Client business name \"Real Client Name\" not found in landing page HTML",
+          "suggestion": "Ensure client business name is rendered in header or hero",
+          "autoFixable": false
+        }
+      ],
+      "timestamp": "2026-08-11T13:32:04.730Z"
+    },
+    {
+      "id": "gate-best-practices",
+      "name": "Best Practices Gate",
+      "status": "FAIL",
+      "score": 70,
+      "minRequiredScore": 95,
+      "passed": false,
+      "measurementType": "BROWSER",
+      "evidence": [
+        "Best practices score: 70/100",
+        "Console errors detected: 6"
+      ],
+      "issues": [
+        {
+          "id": "bp-err-0",
+          "auditorName": "PlaywrightRunner",
+          "severity": "critical",
+          "message": "Browser console error: [mobile] Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "suggestion": "Fix JavaScript runtime errors in landing page",
+          "autoFixable": false
+        },
+        {
+          "id": "bp-err-1",
+          "auditorName": "PlaywrightRunner",
+          "severity": "critical",
+          "message": "Browser console error: [mobile] Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "suggestion": "Fix JavaScript runtime errors in landing page",
+          "autoFixable": false
+        },
+        {
+          "id": "bp-err-2",
+          "auditorName": "PlaywrightRunner",
+          "severity": "critical",
+          "message": "Browser console error: [tablet] Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "suggestion": "Fix JavaScript runtime errors in landing page",
+          "autoFixable": false
+        },
+        {
+          "id": "bp-err-3",
+          "auditorName": "PlaywrightRunner",
+          "severity": "critical",
+          "message": "Browser console error: [tablet] Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "suggestion": "Fix JavaScript runtime errors in landing page",
+          "autoFixable": false
+        },
+        {
+          "id": "bp-err-4",
+          "auditorName": "PlaywrightRunner",
+          "severity": "critical",
+          "message": "Browser console error: [desktop] Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "suggestion": "Fix JavaScript runtime errors in landing page",
+          "autoFixable": false
+        },
+        {
+          "id": "bp-err-5",
+          "auditorName": "PlaywrightRunner",
+          "severity": "critical",
+          "message": "Browser console error: [desktop] Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "suggestion": "Fix JavaScript runtime errors in landing page",
+          "autoFixable": false
+        }
+      ],
+      "timestamp": "2026-08-11T13:32:04.730Z"
+    },
+    {
+      "id": "gate-originality",
+      "name": "Originality Gate",
+      "status": "NOT_MEASURED",
+      "minRequiredScore": 90,
+      "passed": false,
+      "measurementType": "AI_EVALUATED",
+      "evidence": [
+        "Originality evaluation missing from AI Director output."
+      ],
+      "issues": [],
+      "timestamp": "2026-08-11T13:32:04.730Z"
+    },
+    {
+      "id": "gate-dfii",
+      "name": "DFII Gate",
+      "status": "NOT_MEASURED",
+      "minRequiredScore": 90,
+      "passed": false,
+      "measurementType": "AI_EVALUATED",
+      "evidence": [
+        "DFII evaluation missing from AI Director output."
+      ],
+      "issues": [],
+      "timestamp": "2026-08-11T13:32:04.730Z"
+    },
+    {
+      "id": "gate-cinematic",
+      "name": "Cinematic Experience Gate",
+      "status": "NOT_MEASURED",
+      "minRequiredScore": 90,
+      "passed": false,
+      "measurementType": "HYBRID",
+      "evidence": [
+        "Cinematic Experience measurement unavailable."
+      ],
+      "issues": [],
+      "timestamp": "2026-08-11T13:32:04.730Z"
+    }
+  ],
+  "passedAllGates": false,
+  "totalIssuesFound": 6,
+  "totalAutoFixesApplied": 0,
+  "screenshots": {
+    "mobile": "C:\\Framework\\tests\\fixtures\\bad-landing\\reports\\screenshots\\mobile.png",
+    "tablet": "C:\\Framework\\tests\\fixtures\\bad-landing\\reports\\screenshots\\tablet.png",
+    "desktop": "C:\\Framework\\tests\\fixtures\\bad-landing\\reports\\screenshots\\desktop.png"
+  },
+  "provenance": {
+    "frameworkVersion": "1.0.0",
+    "auditTimestamp": "2026-08-11T13:32:04.730Z",
+    "nodeVersion": "v24.15.0",
+    "browserVersion": "Playwright Chromium"
+  },
+  "finalReportPath": "C:\\Framework\\tests\\fixtures\\bad-landing\\reports\\FINAL_AUDIT.md"
+}

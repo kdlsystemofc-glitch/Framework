@@ -1,5 +1,5 @@
 {
-  "executionId": "exec-909f84ce",
+  "executionId": "exec-12edb018",
   "projectName": "real-project",
   "sector": "restaurants",
   "hasBootstrap": true,
@@ -8,6 +8,6 @@
   "hasBuild": true,
   "hasReview": true,
   "overallScore": 98,
-  "passedAllGates": true,
-  "timestamp": "2026-08-11T13:11:48.526Z"
+  "passedAllGates": false,
+  "timestamp": "2026-08-11T13:31:31.922Z"
 }

@@ -20,7 +20,25 @@ export async function runGatesTests() {
     },
   } as AIDirectorResult;
 
-  const gates = GateValidator.validateQualityGates(mockAuditorResults, mockDirectorResult);
+  const mockLighthouse = {
+    available: true,
+    performance: 98,
+    accessibility: 98,
+    bestPractices: 98,
+    seo: 98,
+  };
+
+  const mockPlaywright = {
+    available: true,
+    consoleErrors: [],
+    pageErrors: [],
+    failedRequests: [],
+    hasHorizontalOverflow: {},
+    screenshots: {},
+    domMetrics: { totalElements: 10, hasH1: true, imagesCount: 2, missingAltCount: 0, linksCount: 5, brokenLinksCount: 0 },
+  };
+
+  const gates = GateValidator.validateQualityGates(mockAuditorResults, mockDirectorResult, mockPlaywright, mockLighthouse);
   assert.strictEqual(gates.length, 7);
   assert.strictEqual(gates.every((g) => g.passed), true);
 

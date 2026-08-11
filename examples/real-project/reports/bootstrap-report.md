@@ -1,13 +1,13 @@
 # BOOTSTRAP REPORT — real-project
 
 > **KDL Landing Framework — Project Bootstrap Engine v1.0.0**
-> **Date:** 2026-08-11T13:11:48.474Z
+> **Date:** 2026-08-11T13:31:27.877Z
 
 ## 1. Summary
 - **Project Path:** `C:\Framework\examples\real-project`
 - **Validation Score:** 70/100
 - **Bootstrap Status:** SUCCESS
-- **Files Scanned & Indexed:** 41
+- **Files Scanned & Indexed:** 42
 - **Standard Directories Initialized:** 0 ()
 
 ## 2. Issues & Critical Fixes

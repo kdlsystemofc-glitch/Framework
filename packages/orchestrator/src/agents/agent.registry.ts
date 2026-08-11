@@ -7,7 +7,7 @@ import { BootstrapEngine } from '@kdl/bootstrap';
 import { InspirationEngine } from '@kdl/inspiration';
 import { AIDirectorService } from '@kdl/ai-director';
 import { BuilderEngine, LandingBuildInput } from '@kdl/builder';
-import { ReviewerEngine } from '@kdl/reviewer';
+import { ReviewerEngine, ReviewerService } from '@kdl/reviewer';
 
 export class AgentRegistry {
   private static executors: Map<MethodologyPhaseId, IAgentExecutor> = new Map();
@@ -263,14 +263,22 @@ ${JSON.stringify(payload, null, 2)}
           }
         }
 
-        const reviewer = new ReviewerEngine();
-        ctx.review = await reviewer.reviewProject(ctx.build, ctx.director, ctx.projectPath);
+        const reviewerService = new ReviewerService();
+        ctx.review = await reviewerService.runReview({
+          projectPath: ctx.projectPath,
+          projectName: ctx.projectName,
+          clientContext: ctx.client?.briefing,
+          directorResult: ctx.director,
+          copywriting: ctx.customData?.['json_04-copywriting'],
+          designSystem: ctx.customData?.['json_03-design-system'],
+          blueprint: ctx.customData?.['json_06-ui-architecture'],
+        });
 
         return {
           phaseId: '08.1-final-audit',
           status: 'COMPLETED',
-          generatedArtifacts: ['reports/FINAL_AUDIT.md', 'reports/EXECUTION_REPORT.md'],
-          summary: `Final audit completed with score ${ctx.review.overallScore}/100 across auditors and Quality Gates.`,
+          generatedArtifacts: ['reports/FINAL_AUDIT.md', 'reports/final-audit.json'],
+          summary: `Final audit completed with measured overall score ${ctx.review.overallScore}/100. Status: WAITING_FOR_HUMAN_APPROVAL.`,
           payload: ctx.review,
         };
       },
