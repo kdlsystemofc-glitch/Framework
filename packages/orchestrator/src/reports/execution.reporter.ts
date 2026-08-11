@@ -6,12 +6,17 @@ export class ExecutionReporter {
   public static generateExecutionReport(context: SharedExecutionContext): string {
     const reportPath = path.join(context.projectPath, 'reports', 'EXECUTION_REPORT.md');
     const reportJsonPath = path.join(context.projectPath, 'reports', 'execution-report.json');
+    const projectStatusPath = path.join(context.projectPath, 'PROJECT_STATUS.json');
     fs.mkdirSync(path.dirname(reportPath), { recursive: true });
+
+    const phaseSources = context.phaseSources || {};
 
     const jsonReport = {
       executionId: context.executionId,
       projectName: context.projectName,
       sector: context.sector,
+      fromArtifacts: !!context.fromArtifacts,
+      phaseSources,
       hasBootstrap: !!context.bootstrap,
       hasInspiration: !!context.inspiration,
       hasDirector: !!context.director,
@@ -24,24 +29,36 @@ export class ExecutionReporter {
 
     fs.writeFileSync(reportJsonPath, JSON.stringify(jsonReport, null, 2), 'utf-8');
 
+    let existingStatus: any = {};
+    if (fs.existsSync(projectStatusPath)) {
+      try {
+        existingStatus = JSON.parse(fs.readFileSync(projectStatusPath, 'utf-8'));
+      } catch {
+        // Fallback
+      }
+    }
+
+    existingStatus.projectName = context.projectName;
+    existingStatus.currentStage = 'PIPELINE_COMPLETE';
+    existingStatus.executionMode = context.fromArtifacts ? 'ARTIFACT_DRIVEN' : 'AI_POWERED';
+    existingStatus.phaseSources = phaseSources;
+    fs.writeFileSync(projectStatusPath, JSON.stringify(existingStatus, null, 2), 'utf-8');
+
     const markdown = `# KDL FRAMEWORK — PIPELINE EXECUTION REPORT
 
 **Execution ID**: ${context.executionId}  
 **Project Name**: ${context.projectName}  
 **Sector**: ${context.sector.toUpperCase()}  
+**Execution Mode**: ${context.fromArtifacts ? 'ARTIFACT_DRIVEN (--from-artifacts)' : 'AI_POWERED'}  
 **Status**: PIPELINE COMPLETED SUCCESSFULLY ✅  
 
 ---
 
-## Orchestrated Engines Status
+## Phase Sources Ledger
 
-- [x] **01-bootstrap**: ${context.bootstrap ? 'COMPLETED (12 Directories & Index Created)' : 'SKIPPED'}
-- [x] **02-seo-research**: COMPLETED
-- [x] **03-competitor-audit**: COMPLETED
-- [x] **04-inspiration**: ${context.inspiration ? `COMPLETED (${context.inspiration.totalFetched} References Analyzed)` : 'SKIPPED'}
-- [x] **05-creative-direction**: ${context.director ? `COMPLETED (DFII: ${context.director.originality.dfiiScore}/100)` : 'SKIPPED'}
-- [x] **06-builder**: ${context.build ? `COMPLETED (HTML5: ${context.build.htmlFilePath})` : 'SKIPPED'}
-- [x] **07-review-autofix-loop**: ${context.review ? `COMPLETED (Score: ${context.review.overallScore}/100)` : 'SKIPPED'}
+${Object.entries(phaseSources)
+  .map(([phase, source]) => `- [x] **${phase}**: ${source}`)
+  .join('\n')}
 
 ---
 

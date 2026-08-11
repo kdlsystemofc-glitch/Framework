@@ -108,6 +108,8 @@ export interface SharedExecutionContext {
   director?: AIDirectorResult;
   build?: BuildOutputResult;
   review?: ReviewResult;
+  fromArtifacts?: boolean;
+  phaseSources?: Record<string, 'AI_PROVIDER' | 'EXTERNAL_ARTIFACT' | 'LOCAL_ENGINE'>;
   customData: Record<string, unknown>;
 }
 

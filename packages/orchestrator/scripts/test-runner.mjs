@@ -5,6 +5,7 @@ import { runRetryTests } from '../tests/retry.test.js';
 import { runSchedulerTests } from '../tests/scheduler.test.js';
 import { runPipelineExecutionTests } from '../tests/pipeline-execution.test.js';
 import { runGeminiProviderTests } from '../tests/gemini-provider.test.js';
+import { runFromArtifactsTests } from '../tests/from-artifacts.test.js';
 import { execSync } from 'child_process';
 
 async function main() {
@@ -17,6 +18,7 @@ async function main() {
     await runSchedulerTests();
     await runPipelineExecutionTests();
     await runGeminiProviderTests();
+    await runFromArtifactsTests();
     
     console.log('Running methodology-runtime.test.ts...');
     execSync('node --import tsx tests/methodology-runtime.test.ts', { stdio: 'inherit' });
@@ -25,7 +27,7 @@ async function main() {
     execSync('node --import tsx tests/anti-hardcode.test.ts', { stdio: 'inherit' });
 
     console.log('\n==================================================');
-    console.log('✅ ALL @KDL/ORCHESTRATOR TEST SUITES PASSED (9/9 100%)');
+    console.log('✅ ALL @KDL/ORCHESTRATOR TEST SUITES PASSED (10/10 100%)');
     console.log('==================================================');
   } catch (error) {
     console.error('\n❌ Test suite failed:', error);

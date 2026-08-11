@@ -19,7 +19,8 @@ export class CreateCommand implements KDLCLICommand {
       .option('-r, --resume', 'Resume from prior pipeline checkpoint')
       .option('--non-interactive', 'Execute non-interactively using project environment configuration')
       .option('-d, --dry-run', 'Perform dry-run verification of pipeline stages without modifying project')
-      .action(async (folder: string | undefined, options: { niche?: string; resume?: boolean; nonInteractive?: boolean; dryRun?: boolean }) => {
+      .option('--from-artifacts', 'Execute pipeline using pre-existing cognitive artifacts from .project/artifacts/ (No AI Provider required)')
+      .action(async (folder: string | undefined, options: { niche?: string; resume?: boolean; nonInteractive?: boolean; dryRun?: boolean; fromArtifacts?: boolean }) => {
         let targetFolder = folder || 'examples/real-project';
         let nicheInput = options.niche;
 
@@ -38,7 +39,7 @@ export class CreateCommand implements KDLCLICommand {
         const officialPhases = MethodologyRegistry.getOfficialPhases();
 
         logger.info(Formatter.header(`KDL PIPELINE ORCHESTRATOR — ${targetFolder}`));
-        logger.info(`Mode: ${options.nonInteractive ? 'NON-INTERACTIVE (CI/CD)' : 'INTERACTIVE'} | Dry-Run: ${options.dryRun ? 'YES' : 'NO'}`);
+        logger.info(`Mode: ${options.fromArtifacts ? 'ARTIFACT-DRIVEN (--from-artifacts)' : (options.nonInteractive ? 'NON-INTERACTIVE (CI/CD)' : 'INTERACTIVE')} | Dry-Run: ${options.dryRun ? 'YES' : 'NO'}`);
 
         if (options.dryRun) {
           logger.info(`[DRY RUN] Simulating master 12-phase landing page pipeline for sector '${sector}'...`);
@@ -84,11 +85,13 @@ export class CreateCommand implements KDLCLICommand {
           sector,
           'landing-page-master',
           resumeMode,
-          !options.nonInteractive
+          !options.nonInteractive,
+          options.fromArtifacts || false
         );
 
         logger.success(Formatter.header(`KDL MASTER PIPELINE ORCHESTRATION COMPLETE`));
         logger.info(`Project Name: ${ctx.projectName}`);
+        logger.info(`Execution Mode: ${ctx.fromArtifacts ? 'ARTIFACT_DRIVEN' : 'AI_POWERED'}`);
         logger.info(`Overall Quality Score: ${ctx.review?.overallScore || 100}/100`);
         logger.info(`Passed Quality Gates: ${ctx.review?.passedAllGates ? 'YES ✅' : 'NO ❌'}`);
         logger.info(`Final Audit Report: ${projectPath}/reports/FINAL_AUDIT.md`);

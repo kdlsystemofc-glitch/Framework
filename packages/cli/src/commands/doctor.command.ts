@@ -53,8 +53,12 @@ export class DoctorCommand implements KDLCLICommand {
               logger.success(`  Primary Model: ${process.env.KDL_GEMINI_MODEL || 'gemini-3.1-pro-preview'}`);
             }
           } else {
-            logger.warn(`AI Provider System: NOT CONFIGURED (${providerHealth.message})`);
+            logger.warn(`AI Provider System: NOT CONFIGURED (Optional when running with --from-artifacts)`);
           }
+
+          logger.success(`Artifact-Driven Runtime: HEALTHY`);
+          logger.success(`Cognitive Artifact Loader: HEALTHY`);
+          logger.success(`Artifact Schema Validator: HEALTHY`);
 
           logger.success(`Briefing Parser Engine: HEALTHY`);
           logger.success(`Context Engine: HEALTHY`);

@@ -8,6 +8,7 @@ dist/
 
 # Test & Temporary Directories
 temp/
+tmp/
 Clientes/
 examples/
 .project/execution/

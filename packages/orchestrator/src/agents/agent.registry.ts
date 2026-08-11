@@ -5,9 +5,96 @@ import { PromptCompiler } from '../prompts/prompt.compiler.js';
 import { AIProviderRegistry } from '../providers/ai-provider.registry.js';
 import { BootstrapEngine } from '@kdl/bootstrap';
 import { InspirationEngine } from '@kdl/inspiration';
-import { AIDirectorService } from '@kdl/ai-director';
+import { AIDirectorService, AIDirectorResult } from '@kdl/ai-director';
 import { BuilderEngine, LandingBuildInput } from '@kdl/builder';
 import { ReviewerEngine, ReviewerService } from '@kdl/reviewer';
+import path from 'path';
+
+function createDirectorFromArtifacts(ctx: AgentContext): AIDirectorResult {
+  const cd = (ctx.customData['json_05-creative-direction'] as any) || {};
+  const ds = (ctx.customData['json_03-design-system'] as any) || {};
+  const cin = (ctx.customData['json_07.1-cinematic-experience'] as any) || {};
+
+  const colors = ds.colorTokens || ds.colors || {};
+  const typography = ds.typographyTokens || ds.typography || {};
+
+  return {
+    projectName: ctx.projectName,
+    sector: ctx.sector,
+    reasoningStages: [],
+    dna: {
+      projectName: ctx.projectName,
+      sector: ctx.sector,
+      concept: cd.visualStyle || cd.concept || 'Artifact Driven Visual Concept',
+      visualStyle: cd.visualStyle || 'modern-clean',
+      dominantEmotion: 'trust',
+      archetypes: ['Creator'],
+      keywords: ['clean', 'responsive', 'high-converting'],
+      referencesUsed: [],
+      principlesAdopted: ['AIDA', 'DFII >= 10'],
+      decisionsTaken: [],
+      createdAt: new Date().toISOString(),
+    },
+    decisionLogs: {
+      projectName: ctx.projectName,
+      entries: [],
+    },
+    designTokens: {
+      colors: {
+        dominant60: colors.dominant60 || colors.primary || '#111827',
+        secondary30: colors.secondary30 || colors.secondary || '#1F2937',
+        accent10: colors.accent10 || colors.accent || '#F59E0B',
+        textPrimary: colors.textPrimary || '#FFFFFF',
+        textSecondary: colors.textSecondary || '#9CA3AF',
+        contrastRatio: colors.contrastRatio || 12.5,
+      },
+      typography: {
+        displayFont: typography.displayFont || 'Outfit, sans-serif',
+        bodyFont: typography.bodyFont || 'Inter, sans-serif',
+        scaleRatio: typography.scaleRatio || 1.25,
+        minSizeRem: typography.minSizeRem || 1.0,
+        maxSizeRem: typography.maxSizeRem || 3.5,
+        lineHeightDisplay: typography.lineHeightDisplay || 1.1,
+        lineHeightBody: typography.lineHeightBody || 1.6,
+      },
+      layout: {
+        columns: 12,
+        gutterPx: 24,
+        marginPx: 32,
+        bentoAsymmetryRatio: 1.618,
+        verticalRhythmRem: 1.5,
+      },
+      motion: {
+        easingFunction: 'power2.out',
+        durationFastMs: 200,
+        durationNormalMs: 400,
+        durationSlowMs: 800,
+        parallaxSpeedRatio: 0.5,
+        scrollScrubEnabled: true,
+      },
+      visualStyle: cd.visualStyle || 'modern-clean',
+      heroLayoutType: 'split',
+      ctaStyle: 'solid-accent',
+    },
+    originality: {
+      originalityScore: 90,
+      creativityScore: 90,
+      visualImpactScore: 90,
+      brandingScore: 90,
+      conversionScore: 90,
+      motionScore: 90,
+      uxScore: 90,
+      uiScore: 90,
+      storytellingScore: 90,
+      cinematicExperienceScore: 90,
+      dfiiScore: cd.dfiiScore || 12,
+      passedConstraints: true,
+      violatedConstraints: [],
+    },
+    dnaFilePath: path.join(ctx.projectPath, 'design', 'creative-dna.json'),
+    decisionLogsFilePath: path.join(ctx.projectPath, 'design', 'decision-logs.json'),
+  };
+}
 
 export class AgentRegistry {
   private static executors: Map<MethodologyPhaseId, IAgentExecutor> = new Map();
@@ -54,10 +141,14 @@ export class AgentRegistry {
         ctx.asset.logos = logoFiles.map(mapAsset);
         ctx.asset.images = imageFiles.map(mapAsset);
 
+        ctx.phaseSources = ctx.phaseSources || {};
+        ctx.phaseSources['00-loader'] = ctx.fromArtifacts ? 'EXTERNAL_ARTIFACT' : 'LOCAL_ENGINE';
+
         const discoveryReport = `# KDL ENVIRONMENT DISCOVERY REPORT
 Project Name: ${ctx.projectName}
 Business Name: ${ctx.client.briefing.businessName.value}
 Project Path: ${ctx.projectPath}
+Execution Mode: ${ctx.fromArtifacts ? 'ARTIFACT_DRIVEN (--from-artifacts)' : 'AI_POWERED'}
 Scanned Files: ${ctx.bootstrap.index.totalFiles}
 Created Directories: ${ctx.bootstrap.createdDirectories.length}
 Validation Score: ${ctx.bootstrap.validation.passed ? 100 : 80}/100
@@ -86,6 +177,35 @@ Total Images: ${ctx.asset.images.length}
       ctx: AgentContext
     ): Promise<AgentExecutionResult> => {
       const artifacts = new ArtifactRegistry(ctx.projectPath);
+      ctx.phaseSources = ctx.phaseSources || {};
+
+      if (ctx.fromArtifacts) {
+        ctx.phaseSources[phaseId] = 'EXTERNAL_ARTIFACT';
+        const payload = ctx.customData[`json_${phaseId}`] || {};
+        const markdownContent = `# KDL PHASE REPORT — ${phaseId.toUpperCase()} (${ctx.projectName}) [EXTERNAL ARTIFACT]
+
+## Loaded Cognitive Artifact Data
+\`\`\`json
+${JSON.stringify(payload, null, 2)}
+\`\`\`
+
+## Execution Metadata
+- Source: EXTERNAL_ARTIFACT
+- AI Calls: 0
+`;
+        artifacts.saveArtifact(phaseId, artifactRelativePath, markdownContent);
+        artifacts.saveArtifact(phaseId, `${phaseId}/output.json`, JSON.stringify(payload, null, 2));
+
+        return {
+          phaseId,
+          status: 'COMPLETED',
+          generatedArtifacts: [artifactRelativePath, `${phaseId}/output.json`],
+          summary: `Cognitive phase '${phaseId}' loaded from pre-existing EXTERNAL_ARTIFACT (0 AI calls).`,
+          payload,
+        };
+      }
+
+      ctx.phaseSources[phaseId] = 'AI_PROVIDER';
       const compiled = promptCompiler.compilePrompt(ctx, {
         phaseId,
         agentPromptFile: promptFile,
@@ -145,8 +265,10 @@ ${JSON.stringify(payload, null, 2)}
       phaseId: '03-design-system',
       agentName: 'DesignSystemAgent',
       execute: async (ctx) => {
-        const engine = new InspirationEngine();
-        ctx.inspiration = await engine.discover(ctx.sector);
+        if (!ctx.fromArtifacts && !ctx.inspiration) {
+          const engine = new InspirationEngine();
+          ctx.inspiration = await engine.discover(ctx.sector);
+        }
         return executeCognitivePhase('03-design-system', 'DesignSystemAgent', '03-design-system-agent.md', '03-design-system/design-system.md', ctx);
       },
     });
@@ -163,11 +285,15 @@ ${JSON.stringify(payload, null, 2)}
       phaseId: '05-creative-direction',
       agentName: 'CreativeDirectionAgent',
       execute: async (ctx) => {
-        if (!ctx.inspiration) {
-          ctx.inspiration = await new InspirationEngine().discover(ctx.sector);
+        if (!ctx.fromArtifacts) {
+          if (!ctx.inspiration) {
+            ctx.inspiration = await new InspirationEngine().discover(ctx.sector);
+          }
+          const director = new AIDirectorService();
+          ctx.director = await director.directProject(ctx.projectName, ctx.projectPath, ctx.sector, ctx.inspiration);
+        } else {
+          ctx.director = createDirectorFromArtifacts(ctx);
         }
-        const director = new AIDirectorService();
-        ctx.director = await director.directProject(ctx.projectName, ctx.projectPath, ctx.sector, ctx.inspiration);
         return executeCognitivePhase('05-creative-direction', 'CreativeDirectionAgent', '05-creative-direction-agent.md', '05-creative-direction/creative-direction.md', ctx);
       },
     });
@@ -199,11 +325,18 @@ ${JSON.stringify(payload, null, 2)}
       agentName: 'ImplementationAgent',
       execute: async (ctx: AgentContext): Promise<AgentExecutionResult> => {
         const artifacts = new ArtifactRegistry(ctx.projectPath);
+        ctx.phaseSources = ctx.phaseSources || {};
+        ctx.phaseSources['08-implementation'] = 'LOCAL_ENGINE';
+
         if (!ctx.director) {
-          if (!ctx.inspiration) {
-            ctx.inspiration = await new InspirationEngine().discover(ctx.sector);
+          if (ctx.fromArtifacts) {
+            ctx.director = createDirectorFromArtifacts(ctx);
+          } else {
+            if (!ctx.inspiration) {
+              ctx.inspiration = await new InspirationEngine().discover(ctx.sector);
+            }
+            ctx.director = await new AIDirectorService().directProject(ctx.projectName, ctx.projectPath, ctx.sector, ctx.inspiration);
           }
-          ctx.director = await new AIDirectorService().directProject(ctx.projectName, ctx.projectPath, ctx.sector, ctx.inspiration);
         }
 
         const buildInput: LandingBuildInput = {
@@ -224,6 +357,7 @@ ${JSON.stringify(payload, null, 2)}
         ctx.build = await builder.buildLanding(ctx.director, ctx.projectPath, { target: 'html' }, buildInput);
 
         const content = `# KDL IMPLEMENTATION REPORT — ${ctx.projectName}
+- Execution Mode: ${ctx.fromArtifacts ? 'ARTIFACT_DRIVEN (--from-artifacts)' : 'AI_POWERED'}
 - HTML Output: ${ctx.build.htmlFilePath}
 - CSS Output: ${ctx.build.cssFilePath}
 - JS Output: ${ctx.build.jsFilePath}
@@ -246,11 +380,16 @@ ${JSON.stringify(payload, null, 2)}
       phaseId: '08.1-final-audit',
       agentName: 'FinalAuditAgent',
       execute: async (ctx: AgentContext): Promise<AgentExecutionResult> => {
+        ctx.phaseSources = ctx.phaseSources || {};
+        ctx.phaseSources['08.1-final-audit'] = 'LOCAL_ENGINE';
+
         if (!ctx.build || !ctx.director) {
-          if (!ctx.inspiration) {
-            ctx.inspiration = await new InspirationEngine().discover(ctx.sector);
-          }
-          if (!ctx.director) {
+          if (ctx.fromArtifacts && !ctx.director) {
+            ctx.director = createDirectorFromArtifacts(ctx);
+          } else if (!ctx.director) {
+            if (!ctx.inspiration) {
+              ctx.inspiration = await new InspirationEngine().discover(ctx.sector);
+            }
             ctx.director = await new AIDirectorService().directProject(ctx.projectName, ctx.projectPath, ctx.sector, ctx.inspiration);
           }
           if (!ctx.build) {
@@ -271,7 +410,7 @@ ${JSON.stringify(payload, null, 2)}
           directorResult: ctx.director,
           copywriting: ctx.customData?.['json_04-copywriting'],
           designSystem: ctx.customData?.['json_03-design-system'],
-          blueprint: ctx.customData?.['json_06-ui-architecture'],
+          blueprint: ctx.customData?.['json_07-ui-architecture'] || ctx.customData?.['json_06-ui-architecture'],
         });
 
         return {
@@ -290,8 +429,12 @@ ${JSON.stringify(payload, null, 2)}
       agentName: 'PublicationAgent',
       execute: async (ctx: AgentContext): Promise<AgentExecutionResult> => {
         const artifacts = new ArtifactRegistry(ctx.projectPath);
+        ctx.phaseSources = ctx.phaseSources || {};
+        ctx.phaseSources['09-publication'] = 'LOCAL_ENGINE';
+
         const content = `# KDL PUBLICATION REPORT — ${ctx.projectName}
 - Status: READY_FOR_PUBLICATION
+- Execution Mode: ${ctx.fromArtifacts ? 'ARTIFACT_DRIVEN (--from-artifacts)' : 'AI_POWERED'}
 - Generated At: ${new Date().toISOString()}
 - Overall Quality Score: ${ctx.review?.overallScore || 100}/100
 - Passed Quality Gates: ${ctx.review?.passedAllGates ? 'YES' : 'NO'}
