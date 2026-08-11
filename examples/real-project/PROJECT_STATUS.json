@@ -1,13 +1,12 @@
 {
   "projectName": "real-project",
   "bootstrapCompleted": true,
-  "bootstrapCompletedAt": "2026-08-11T13:31:27.875Z",
+  "bootstrapCompletedAt": "2026-08-11T13:41:50.934Z",
   "currentStage": "BOOTSTRAP_COMPLETE",
   "validationPassed": true,
-  "validationScore": 70,
+  "validationScore": 80,
   "missingRequiredFiles": [],
   "recommendedActions": [
-    "[WARNING] Provide high-quality brand images inside assets/ for authentic storytelling.",
     "[WARNING] Remove redundant file copies to optimize storage.",
     "[WARNING] Remove redundant file copies to optimize storage."
   ]

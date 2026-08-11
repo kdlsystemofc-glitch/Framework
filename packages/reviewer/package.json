@@ -25,6 +25,8 @@
     "@kdl/bootstrap": "workspace:*",
     "@kdl/builder": "workspace:*",
     "@kdl/inspiration": "workspace:*",
+    "chrome-launcher": "^1.1.2",
+    "lighthouse": "^11.5.0",
     "playwright": "^1.42.0"
   },
   "devDependencies": {

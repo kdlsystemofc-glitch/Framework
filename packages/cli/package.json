@@ -30,7 +30,9 @@
     "@kdl/inspiration": "workspace:*",
     "@kdl/orchestrator": "workspace:*",
     "@kdl/reviewer": "workspace:*",
-    "commander": "^12.0.0"
+    "chrome-launcher": "^1.1.2",
+    "commander": "^12.0.0",
+    "lighthouse": "^11.5.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
