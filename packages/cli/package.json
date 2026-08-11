@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "typecheck": "tsc",
     "dev": "tsc --watch",
     "start": "node ./bin/kdl.js",
     "test": "node --import tsx scripts/test-runner.mjs"
@@ -23,12 +24,12 @@
   "author": "KDL System",
   "license": "Proprietary",
   "dependencies": {
-    "@kdl/ai-director": "file:../ai-director",
-    "@kdl/bootstrap": "file:../bootstrap",
-    "@kdl/builder": "file:../builder",
-    "@kdl/inspiration": "file:../inspiration",
-    "@kdl/orchestrator": "file:../orchestrator",
-    "@kdl/reviewer": "file:../reviewer",
+    "@kdl/ai-director": "workspace:*",
+    "@kdl/bootstrap": "workspace:*",
+    "@kdl/builder": "workspace:*",
+    "@kdl/inspiration": "workspace:*",
+    "@kdl/orchestrator": "workspace:*",
+    "@kdl/reviewer": "workspace:*",
     "commander": "^12.0.0"
   },
   "devDependencies": {

@@ -7,6 +7,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "typecheck": "tsc",
     "dev": "tsc --watch",
     "test": "node --import tsx scripts/test-runner.mjs"
   },
@@ -21,9 +22,9 @@
   "author": "KDL System",
   "license": "Proprietary",
   "dependencies": {
-    "@kdl/ai-director": "file:../ai-director",
-    "@kdl/bootstrap": "file:../bootstrap",
-    "@kdl/inspiration": "file:../inspiration"
+    "@kdl/ai-director": "workspace:*",
+    "@kdl/bootstrap": "workspace:*",
+    "@kdl/inspiration": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.19.43",

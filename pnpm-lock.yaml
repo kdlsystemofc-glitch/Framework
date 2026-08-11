@@ -21,10 +21,10 @@ importers:
   packages/ai-director:
     dependencies:
       '@kdl/bootstrap':
-        specifier: file:../bootstrap
+        specifier: workspace:*
         version: link:../bootstrap
       '@kdl/inspiration':
-        specifier: file:../inspiration
+        specifier: workspace:*
         version: link:../inspiration
     devDependencies:
       '@types/node':
@@ -52,13 +52,13 @@ importers:
   packages/builder:
     dependencies:
       '@kdl/ai-director':
-        specifier: file:../ai-director
+        specifier: workspace:*
         version: link:../ai-director
       '@kdl/bootstrap':
-        specifier: file:../bootstrap
+        specifier: workspace:*
         version: link:../bootstrap
       '@kdl/inspiration':
-        specifier: file:../inspiration
+        specifier: workspace:*
         version: link:../inspiration
     devDependencies:
       '@types/node':
@@ -74,22 +74,22 @@ importers:
   packages/cli:
     dependencies:
       '@kdl/ai-director':
-        specifier: file:../ai-director
+        specifier: workspace:*
         version: link:../ai-director
       '@kdl/bootstrap':
-        specifier: file:../bootstrap
+        specifier: workspace:*
         version: link:../bootstrap
       '@kdl/builder':
-        specifier: file:../builder
+        specifier: workspace:*
         version: link:../builder
       '@kdl/inspiration':
-        specifier: file:../inspiration
+        specifier: workspace:*
         version: link:../inspiration
       '@kdl/orchestrator':
-        specifier: file:../orchestrator
+        specifier: workspace:*
         version: link:../orchestrator
       '@kdl/reviewer':
-        specifier: file:../reviewer
+        specifier: workspace:*
         version: link:../reviewer
       commander:
         specifier: ^12.0.0
@@ -120,19 +120,19 @@ importers:
   packages/orchestrator:
     dependencies:
       '@kdl/ai-director':
-        specifier: file:../ai-director
+        specifier: workspace:*
         version: link:../ai-director
       '@kdl/bootstrap':
-        specifier: file:../bootstrap
+        specifier: workspace:*
         version: link:../bootstrap
       '@kdl/builder':
-        specifier: file:../builder
+        specifier: workspace:*
         version: link:../builder
       '@kdl/inspiration':
-        specifier: file:../inspiration
+        specifier: workspace:*
         version: link:../inspiration
       '@kdl/reviewer':
-        specifier: file:../reviewer
+        specifier: workspace:*
         version: link:../reviewer
     devDependencies:
       '@types/node':
@@ -148,16 +148,16 @@ importers:
   packages/reviewer:
     dependencies:
       '@kdl/ai-director':
-        specifier: file:../ai-director
+        specifier: workspace:*
         version: link:../ai-director
       '@kdl/bootstrap':
-        specifier: file:../bootstrap
+        specifier: workspace:*
         version: link:../bootstrap
       '@kdl/builder':
-        specifier: file:../builder
+        specifier: workspace:*
         version: link:../builder
       '@kdl/inspiration':
-        specifier: file:../inspiration
+        specifier: workspace:*
         version: link:../inspiration
     devDependencies:
       '@types/node':
