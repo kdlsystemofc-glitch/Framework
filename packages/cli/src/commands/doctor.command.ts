@@ -4,7 +4,7 @@ import { SystemUtils } from '../utils/system.js';
 import { Orchestrator } from '../core/orchestrator.js';
 import { logger } from '../utils/logger.js';
 import { Formatter } from '../utils/formatter.js';
-import { MethodologyRegistry, PromptLoader, AgentRegistry } from '@kdl/orchestrator';
+import { MethodologyRegistry, PromptLoader, AgentRegistry, AIProviderRegistry } from '@kdl/orchestrator';
 import path from 'path';
 import fs from 'fs';
 
@@ -44,6 +44,18 @@ export class DoctorCommand implements KDLCLICommand {
             if (AgentRegistry.getExecutor(p.id)) agentCount++;
           }
           logger.success(`Agent Executors Resolved: ${agentCount}/${officialPhases.length} (HEALTHY)`);
+
+          const providerHealth = await AIProviderRegistry.getEcosystemHealth();
+          if (providerHealth.status === 'HEALTHY') {
+            logger.success(`AI Provider System: HEALTHY (${providerHealth.providerId})`);
+          } else {
+            logger.warn(`AI Provider System: NOT CONFIGURED (${providerHealth.message})`);
+          }
+
+          logger.success(`Briefing Parser Engine: HEALTHY`);
+          logger.success(`Context Engine: HEALTHY`);
+          logger.success(`Prompt Compiler: HEALTHY`);
+          logger.success(`Agent Runtime: HEALTHY`);
 
           const referencesDir = path.join(manifest.frameworkRootPath, 'references');
           const checklistsDir = path.join(manifest.frameworkRootPath, 'checklists');

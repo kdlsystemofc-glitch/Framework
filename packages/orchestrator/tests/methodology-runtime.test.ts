@@ -60,6 +60,9 @@ async function testArtifactRegistry() {
 
 async function test12PhasePipelineExecution() {
   console.log('Testing 12-Phase Pipeline Execution...');
+  process.env.NODE_ENV = 'test';
+  process.env.KDL_AI_PROVIDER = 'mock';
+
   const tmpDir = path.join(process.cwd(), 'temp', 'test-12-phase-project');
   if (fs.existsSync(tmpDir)) fs.rmSync(tmpDir, { recursive: true, force: true });
   fs.mkdirSync(tmpDir, { recursive: true });
@@ -75,7 +78,7 @@ async function test12PhasePipelineExecution() {
     sector: 'restaurants',
     project: { projectName: 'test-gourmet', projectPath: tmpDir, createdAt: new Date().toISOString() },
     client: { niche: 'restaurants', brandName: 'Test Gourmet' },
-    asset: { hasLogo: false, imagePaths: [] },
+    asset: { hasLogo: false, imagePaths: [], logos: [], images: [], videos: [], documents: [], menus: [], other: [] },
     research: { seoKeywords: ['restaurants'], competitorWhiteSpace: 'Cinematic' },
     creative: {},
     design: {},

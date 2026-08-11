@@ -1,30 +1,39 @@
+import path from 'path';
 import { SharedExecutionContext } from '../types/orchestrator.types.js';
 import { IndustrySector } from '@kdl/inspiration';
 
 export class ExecutionContextHolder {
   public static createInitialContext(
     executionId: string,
-    projectName: string,
+    rawProjectName: string,
     projectPath: string,
     sector: IndustrySector
   ): SharedExecutionContext {
+    const sanitizedProjectName = path.basename(projectPath) || rawProjectName;
+
     return {
       executionId,
-      projectName,
+      projectName: sanitizedProjectName,
       projectPath,
       sector,
       project: {
-        projectName,
+        projectName: sanitizedProjectName,
         projectPath,
         createdAt: new Date().toISOString(),
       },
       client: {
         niche: sector,
-        brandName: projectName,
+        brandName: sanitizedProjectName,
       },
       asset: {
         hasLogo: false,
         imagePaths: [],
+        logos: [],
+        images: [],
+        videos: [],
+        documents: [],
+        menus: [],
+        other: [],
       },
       research: {
         seoKeywords: [],

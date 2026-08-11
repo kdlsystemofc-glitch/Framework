@@ -1,93 +1,93 @@
 {
-  "executionId": "exec-90fc841a",
+  "executionId": "exec-4e1fd079",
   "pipelineId": "landing-page",
-  "projectName": "L'Étoile Fine Dining E2E Test",
+  "projectName": "real-project",
   "state": "COMPLETED",
   "stageCheckpoints": {
     "00-loader": {
       "stageId": "00-loader",
       "status": "COMPLETED",
       "attempts": 1,
-      "durationMs": 25,
-      "completedAt": "2026-08-10T16:36:28.839Z"
+      "durationMs": 32,
+      "completedAt": "2026-08-11T13:00:33.689Z"
     },
     "01-discovery": {
       "stageId": "01-discovery",
       "status": "COMPLETED",
       "attempts": 1,
-      "durationMs": 1,
-      "completedAt": "2026-08-10T16:36:28.841Z"
+      "durationMs": 3,
+      "completedAt": "2026-08-11T13:00:33.693Z"
     },
     "02-brand-strategy": {
       "stageId": "02-brand-strategy",
       "status": "COMPLETED",
       "attempts": 1,
-      "durationMs": 0,
-      "completedAt": "2026-08-10T16:36:28.842Z"
+      "durationMs": 3,
+      "completedAt": "2026-08-11T13:00:33.697Z"
     },
     "03-design-system": {
       "stageId": "03-design-system",
       "status": "COMPLETED",
       "attempts": 1,
-      "durationMs": 2,
-      "completedAt": "2026-08-10T16:36:28.846Z"
+      "durationMs": 4,
+      "completedAt": "2026-08-11T13:00:33.702Z"
     },
     "04-copywriting": {
       "stageId": "04-copywriting",
       "status": "COMPLETED",
       "attempts": 1,
-      "durationMs": 1,
-      "completedAt": "2026-08-10T16:36:28.848Z"
+      "durationMs": 2,
+      "completedAt": "2026-08-11T13:00:33.705Z"
     },
     "05-creative-direction": {
       "stageId": "05-creative-direction",
       "status": "COMPLETED",
       "attempts": 1,
-      "durationMs": 2,
-      "completedAt": "2026-08-10T16:36:28.851Z"
+      "durationMs": 4,
+      "completedAt": "2026-08-11T13:00:33.710Z"
     },
     "06-experience-design": {
       "stageId": "06-experience-design",
       "status": "COMPLETED",
       "attempts": 1,
-      "durationMs": 1,
-      "completedAt": "2026-08-10T16:36:28.853Z"
+      "durationMs": 2,
+      "completedAt": "2026-08-11T13:00:33.713Z"
     },
     "07-ui-architecture": {
       "stageId": "07-ui-architecture",
       "status": "COMPLETED",
       "attempts": 1,
-      "durationMs": 0,
-      "completedAt": "2026-08-10T16:36:28.854Z"
+      "durationMs": 3,
+      "completedAt": "2026-08-11T13:00:33.717Z"
     },
     "07.1-cinematic-experience": {
       "stageId": "07.1-cinematic-experience",
       "status": "COMPLETED",
       "attempts": 1,
-      "durationMs": 1,
-      "completedAt": "2026-08-10T16:36:28.856Z"
+      "durationMs": 2,
+      "completedAt": "2026-08-11T13:00:33.720Z"
     },
     "08-implementation": {
       "stageId": "08-implementation",
       "status": "COMPLETED",
       "attempts": 1,
-      "durationMs": 3,
-      "completedAt": "2026-08-10T16:36:28.860Z"
+      "durationMs": 4,
+      "completedAt": "2026-08-11T13:00:33.725Z"
     },
     "08.1-final-audit": {
       "stageId": "08.1-final-audit",
       "status": "COMPLETED",
       "attempts": 1,
-      "durationMs": 4,
-      "completedAt": "2026-08-10T16:36:28.866Z"
+      "durationMs": 5,
+      "completedAt": "2026-08-11T13:00:33.730Z"
     },
     "09-publication": {
       "stageId": "09-publication",
       "status": "COMPLETED",
       "attempts": 1,
       "durationMs": 1,
-      "completedAt": "2026-08-10T16:36:28.868Z"
+      "completedAt": "2026-08-11T13:00:33.732Z"
     }
   },
-  "updatedAt": "2026-08-10T16:36:28.812Z"
+  "updatedAt": "2026-08-11T13:00:33.656Z"
 }

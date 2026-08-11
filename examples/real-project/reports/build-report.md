@@ -1,5 +1,4 @@
-# KDL IMPLEMENTATION REPORT — L'Étoile Fine Dining E2E Test
-
+# KDL IMPLEMENTATION REPORT — real-project
 - HTML Output: C:\Framework\examples\real-project\landing\index.html
 - CSS Output: C:\Framework\examples\real-project\landing\styles.css
 - JS Output: C:\Framework\examples\real-project\landing\app.js

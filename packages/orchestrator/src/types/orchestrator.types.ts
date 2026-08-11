@@ -1,4 +1,4 @@
-import { BootstrapResult } from '@kdl/bootstrap';
+import { BootstrapResult, ClientProjectContext, FileMetadata } from '@kdl/bootstrap';
 import { InspirationDiscoveryResult, IndustrySector } from '@kdl/inspiration';
 import { AIDirectorResult } from '@kdl/ai-director';
 import { BuildOutputResult } from '@kdl/builder';
@@ -34,12 +34,30 @@ export interface ProjectContext {
 export interface ClientContext {
   niche: IndustrySector;
   brandName: string;
+  briefing?: ClientProjectContext;
+}
+
+export interface DetailedAssetItem {
+  absolutePath: string;
+  relativePath: string;
+  filename: string;
+  extension: string;
+  mimeType: string;
+  sizeBytes: number;
+  category: string;
+  source: string;
 }
 
 export interface AssetContext {
   hasLogo: boolean;
   logoPath?: string;
   imagePaths: string[];
+  logos: DetailedAssetItem[];
+  images: DetailedAssetItem[];
+  videos: DetailedAssetItem[];
+  documents: DetailedAssetItem[];
+  menus: DetailedAssetItem[];
+  other: DetailedAssetItem[];
 }
 
 export interface ResearchContext {

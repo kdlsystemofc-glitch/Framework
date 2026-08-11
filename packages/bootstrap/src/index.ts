@@ -5,9 +5,14 @@ import { StructureManager } from './filesystem/structure.manager.js';
 import { IndexGenerator } from './generators/index.generator.js';
 import { MarkdownGenerator } from './generators/markdown.generator.js';
 import { BootstrapReporter } from './reports/bootstrap.reporter.js';
+import { BriefingParser } from './briefing/briefing.parser.js';
+import { ClientProjectContext, BriefingParseResult } from './briefing/briefing.types.js';
 import { ProjectIndex, ProjectStatusLedger, ValidationResult } from './types/bootstrap.types.js';
 
 export * from './types/bootstrap.types.js';
+export * from './briefing/briefing.types.js';
+export * from './briefing/briefing.parser.js';
+export * from './briefing/briefing.validator.js';
 export * from './scanner/folder.scanner.js';
 export * from './analyzer/asset.classifier.js';
 export * from './analyzer/quality.analyzer.js';
@@ -24,13 +29,15 @@ export interface BootstrapResult {
   index: ProjectIndex;
   validation: ValidationResult;
   statusLedger: ProjectStatusLedger;
+  briefingParse: BriefingParseResult;
+  clientContext: ClientProjectContext;
   reportPath: string;
 }
 
 export class BootstrapEngine {
   public static async execute(targetClientFolder: string): Promise<BootstrapResult> {
     const projectPath = path.resolve(targetClientFolder);
-    const projectName = path.basename(projectPath);
+    const sanitizedProjectName = path.basename(projectPath);
 
     // 1. Ensure 12 standard directories
     const createdDirectories = StructureManager.ensureStandardDirectories(projectPath);
@@ -39,27 +46,34 @@ export class BootstrapEngine {
     const scanner = new FolderScanner(projectPath);
     const { files, directories } = scanner.scan();
 
-    // 3. Validate project quality & mandatory assets
+    // 3. Parse Briefing Markdown
+    const briefingParse = BriefingParser.parse(projectPath, sanitizedProjectName);
+    const clientContext = briefingParse.clientContext;
+    const finalProjectName = clientContext.businessName.value || sanitizedProjectName;
+
+    // 4. Validate project quality & mandatory assets
     const validation = ProjectValidator.validate(files);
 
-    // 4. Generate index & status
+    // 5. Generate index & status
     const index = IndexGenerator.generateIndex(projectPath, files, directories);
-    const statusLedger = IndexGenerator.generateStatusLedger(projectName, validation);
+    const statusLedger = IndexGenerator.generateStatusLedger(finalProjectName, validation);
     IndexGenerator.writeIndexAndStatus(projectPath, index, statusLedger);
 
-    // 5. Generate Markdown analysis documents
+    // 6. Generate Markdown analysis documents
     MarkdownGenerator.writeAllMarkdownDocs(projectPath, index, validation, createdDirectories);
 
-    // 6. Generate bootstrap report
+    // 7. Generate bootstrap report
     const reportPath = BootstrapReporter.writeReport(projectPath, index, validation, createdDirectories);
 
     return {
-      projectName,
+      projectName: finalProjectName,
       projectPath,
       createdDirectories,
       index,
       validation,
       statusLedger,
+      briefingParse,
+      clientContext,
       reportPath,
     };
   }

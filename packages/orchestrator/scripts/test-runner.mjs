@@ -19,8 +19,11 @@ async function main() {
     console.log('Running methodology-runtime.test.ts...');
     execSync('node --import tsx tests/methodology-runtime.test.ts', { stdio: 'inherit' });
 
+    console.log('Running anti-hardcode.test.ts...');
+    execSync('node --import tsx tests/anti-hardcode.test.ts', { stdio: 'inherit' });
+
     console.log('\n==================================================');
-    console.log('✅ ALL @KDL/ORCHESTRATOR TEST SUITES PASSED (7/7 100%)');
+    console.log('✅ ALL @KDL/ORCHESTRATOR TEST SUITES PASSED (8/8 100%)');
     console.log('==================================================');
   } catch (error) {
     console.error('\n❌ Test suite failed:', error);

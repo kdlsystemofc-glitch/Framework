@@ -1,21 +1,34 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-08-10T16:36:28.836Z",
+  "generatedAt": "2026-08-11T13:00:33.686Z",
   "projectPath": "C:\\Framework\\examples\\real-project",
   "projectName": "real-project",
-  "totalFiles": 31,
+  "totalFiles": 40,
   "totalDirectories": 24,
-  "totalSizeBytes": 39620,
+  "totalSizeBytes": 55366,
   "files": [
+    {
+      "relativePath": "00-loader/client-briefing.json",
+      "absolutePath": "C:/Framework/examples/real-project/00-loader/client-briefing.json",
+      "filename": "client-briefing.json",
+      "extension": "json",
+      "sizeBytes": 2991,
+      "sha256": "aa593e617eb3520e663e88b395ee059d5eeee964adbfb65929ae8c5e6c56c3e8",
+      "createdAt": "2026-08-11T12:57:08.151Z",
+      "modifiedAt": "2026-08-11T12:59:05.897Z",
+      "category": "Briefing",
+      "mimeType": "application/json",
+      "isZeroByte": false
+    },
     {
       "relativePath": "00-loader/environment-discovery.md",
       "absolutePath": "C:/Framework/examples/real-project/00-loader/environment-discovery.md",
       "filename": "environment-discovery.md",
       "extension": "md",
-      "sizeBytes": 183,
-      "sha256": "b59356af5de522122758fe270e2ce19a7eacb9dd2cc68cb082032c71dc84e8dd",
+      "sizeBytes": 289,
+      "sha256": "4794cd38b0c8c0ff3777311444b183147bc3d369cf2d9a9300f924f9ed7d8cd2",
       "createdAt": "2026-08-10T16:34:18.957Z",
-      "modifiedAt": "2026-08-10T16:35:27.637Z",
+      "modifiedAt": "2026-08-11T12:59:05.897Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -25,12 +38,25 @@
       "absolutePath": "C:/Framework/examples/real-project/01-discovery/discovery.md",
       "filename": "discovery.md",
       "extension": "md",
-      "sizeBytes": 406,
-      "sha256": "39527b31388104a6205c82ea6b9335950779554fc0a1e9428b74e3a42b7be9bb",
+      "sizeBytes": 622,
+      "sha256": "afdbdafcb037040287f0d0c5f7b53bf3a9edc22142e82d43359f14e3e7f0aae2",
       "createdAt": "2026-08-10T16:34:18.960Z",
-      "modifiedAt": "2026-08-10T16:35:27.639Z",
+      "modifiedAt": "2026-08-11T12:59:05.901Z",
       "category": "Document",
       "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "01-discovery/output.json",
+      "absolutePath": "C:/Framework/examples/real-project/01-discovery/output.json",
+      "filename": "output.json",
+      "extension": "json",
+      "sizeBytes": 449,
+      "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
+      "createdAt": "2026-08-11T12:58:03.152Z",
+      "modifiedAt": "2026-08-11T12:59:05.901Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
       "isZeroByte": false
     },
     {
@@ -38,12 +64,25 @@
       "absolutePath": "C:/Framework/examples/real-project/02-brand-strategy/brand-strategy.md",
       "filename": "brand-strategy.md",
       "extension": "md",
-      "sizeBytes": 317,
-      "sha256": "b5e2f8fca9a9c3eadbacb9245bbd78db62e35b4e6994988324df6bd750db5f2f",
+      "sizeBytes": 627,
+      "sha256": "95e982b0194c8c91abc7234f5db69a7eb47038e109be4c3193a636be4fb49ed4",
       "createdAt": "2026-08-10T16:34:18.962Z",
-      "modifiedAt": "2026-08-10T16:35:27.641Z",
+      "modifiedAt": "2026-08-11T12:59:05.904Z",
       "category": "Document",
       "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "02-brand-strategy/output.json",
+      "absolutePath": "C:/Framework/examples/real-project/02-brand-strategy/output.json",
+      "filename": "output.json",
+      "extension": "json",
+      "sizeBytes": 449,
+      "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
+      "createdAt": "2026-08-11T12:58:03.156Z",
+      "modifiedAt": "2026-08-11T12:59:05.905Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
       "isZeroByte": false
     },
     {
@@ -51,12 +90,25 @@
       "absolutePath": "C:/Framework/examples/real-project/03-design-system/design-system.md",
       "filename": "design-system.md",
       "extension": "md",
-      "sizeBytes": 275,
-      "sha256": "6dae1d8e55911281a93149cfbdbab70ccf375ab49ddc3b67efd3f4e9cb4b88bc",
+      "sizeBytes": 626,
+      "sha256": "251eb98eb0bf169ad8e50392b02f510fc8e3546a499902bd6a9da1c5b22fc314",
       "createdAt": "2026-08-10T16:34:18.967Z",
-      "modifiedAt": "2026-08-10T16:35:27.644Z",
+      "modifiedAt": "2026-08-11T12:59:05.910Z",
       "category": "Document",
       "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "03-design-system/output.json",
+      "absolutePath": "C:/Framework/examples/real-project/03-design-system/output.json",
+      "filename": "output.json",
+      "extension": "json",
+      "sizeBytes": 449,
+      "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
+      "createdAt": "2026-08-11T12:58:03.162Z",
+      "modifiedAt": "2026-08-11T12:59:05.912Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
       "isZeroByte": false
     },
     {
@@ -64,12 +116,25 @@
       "absolutePath": "C:/Framework/examples/real-project/04-copywriting/copywriting.md",
       "filename": "copywriting.md",
       "extension": "md",
-      "sizeBytes": 370,
-      "sha256": "47a287d7fbd851893905ec2a4e4941f14d8b86d99e11d8f2e19a7759dc20e37a",
+      "sizeBytes": 624,
+      "sha256": "e287aeb31cf39dda15dbfbfad72b43cdb29830601f36594e740d223956569027",
       "createdAt": "2026-08-10T16:34:18.970Z",
-      "modifiedAt": "2026-08-10T16:35:27.645Z",
+      "modifiedAt": "2026-08-11T12:59:05.916Z",
       "category": "Document",
       "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "04-copywriting/output.json",
+      "absolutePath": "C:/Framework/examples/real-project/04-copywriting/output.json",
+      "filename": "output.json",
+      "extension": "json",
+      "sizeBytes": 449,
+      "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
+      "createdAt": "2026-08-11T12:58:03.167Z",
+      "modifiedAt": "2026-08-11T12:59:05.916Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
       "isZeroByte": false
     },
     {
@@ -77,12 +142,25 @@
       "absolutePath": "C:/Framework/examples/real-project/05-creative-direction/creative-direction.md",
       "filename": "creative-direction.md",
       "extension": "md",
-      "sizeBytes": 266,
-      "sha256": "64e3b287bb53b60f26d8fdd48f67949e7c2c74e8e0e82b35a92b7fb279236221",
+      "sizeBytes": 631,
+      "sha256": "e4d8c9290e7d3fd432f3b38690929baa1b44834f7fb58d2ca65de75e7a9abe81",
       "createdAt": "2026-08-10T16:34:51.337Z",
-      "modifiedAt": "2026-08-10T16:35:27.649Z",
+      "modifiedAt": "2026-08-11T12:59:05.922Z",
       "category": "Document",
       "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "05-creative-direction/output.json",
+      "absolutePath": "C:/Framework/examples/real-project/05-creative-direction/output.json",
+      "filename": "output.json",
+      "extension": "json",
+      "sizeBytes": 449,
+      "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
+      "createdAt": "2026-08-11T12:58:03.173Z",
+      "modifiedAt": "2026-08-11T12:59:05.923Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
       "isZeroByte": false
     },
     {
@@ -90,12 +168,38 @@
       "absolutePath": "C:/Framework/examples/real-project/06-experience-design/experience-design.md",
       "filename": "experience-design.md",
       "extension": "md",
-      "sizeBytes": 285,
-      "sha256": "290b1d3d1f9936a15e19b0e88a63b1eec19aa547a3b43eb2004f40dcd50cf193",
+      "sizeBytes": 630,
+      "sha256": "7e61c5254ef724fb0580e1cf03f0d0d3e5df330318bf126f1f0061ea6759ac17",
       "createdAt": "2026-08-10T16:34:51.340Z",
-      "modifiedAt": "2026-08-10T16:35:27.650Z",
+      "modifiedAt": "2026-08-11T12:59:05.927Z",
       "category": "Document",
       "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "06-experience-design/output.json",
+      "absolutePath": "C:/Framework/examples/real-project/06-experience-design/output.json",
+      "filename": "output.json",
+      "extension": "json",
+      "sizeBytes": 449,
+      "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
+      "createdAt": "2026-08-11T12:58:03.177Z",
+      "modifiedAt": "2026-08-11T12:59:05.927Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "07-ui-architecture/output.json",
+      "absolutePath": "C:/Framework/examples/real-project/07-ui-architecture/output.json",
+      "filename": "output.json",
+      "extension": "json",
+      "sizeBytes": 449,
+      "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
+      "createdAt": "2026-08-11T12:58:03.181Z",
+      "modifiedAt": "2026-08-11T12:59:05.933Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
       "isZeroByte": false
     },
     {
@@ -103,10 +207,10 @@
       "absolutePath": "C:/Framework/examples/real-project/07-ui-architecture/ui-architecture.md",
       "filename": "ui-architecture.md",
       "extension": "md",
-      "sizeBytes": 233,
-      "sha256": "756682f47614261aec441975d64b79e7c64130c61f25eec979e709a91a4e7753",
+      "sizeBytes": 628,
+      "sha256": "f019cce8ecc2a4d030bf01e49d1761cf91c8d7905b492f08e7bb283003bc78e9",
       "createdAt": "2026-08-10T16:34:51.343Z",
-      "modifiedAt": "2026-08-10T16:35:27.652Z",
+      "modifiedAt": "2026-08-11T12:59:05.933Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -116,12 +220,25 @@
       "absolutePath": "C:/Framework/examples/real-project/07.1-cinematic-experience/cinematic-experience.md",
       "filename": "cinematic-experience.md",
       "extension": "md",
-      "sizeBytes": 250,
-      "sha256": "75b4f60eee311d8bc6d6bc51eb3be1da35cb296c0b42153b29aa414f1c70eef8",
+      "sizeBytes": 635,
+      "sha256": "bd9894b7adeeae1867436c2f74bbf808ce898ad0e87ba02d4d62c9cd284fb0de",
       "createdAt": "2026-08-10T16:34:51.346Z",
-      "modifiedAt": "2026-08-10T16:35:27.653Z",
+      "modifiedAt": "2026-08-11T12:59:05.938Z",
       "category": "Document",
       "mimeType": "text/markdown",
+      "isZeroByte": false
+    },
+    {
+      "relativePath": "07.1-cinematic-experience/output.json",
+      "absolutePath": "C:/Framework/examples/real-project/07.1-cinematic-experience/output.json",
+      "filename": "output.json",
+      "extension": "json",
+      "sizeBytes": 449,
+      "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
+      "createdAt": "2026-08-11T12:58:03.186Z",
+      "modifiedAt": "2026-08-11T12:59:05.938Z",
+      "category": "Unknown",
+      "mimeType": "application/json",
       "isZeroByte": false
     },
     {
@@ -155,10 +272,10 @@
       "absolutePath": "C:/Framework/examples/real-project/CLIENT_PROFILE.md",
       "filename": "CLIENT_PROFILE.md",
       "extension": "md",
-      "sizeBytes": 159,
-      "sha256": "5b09a24194496000f6bca9256a202c53ce0eb92ca163253a24e6285a8af41c1e",
+      "sizeBytes": 181,
+      "sha256": "e539eb74ed4b232704834a79c61a6881661ac8b2e47e76e8c247b2bd97527c9d",
       "createdAt": "2026-08-10T10:59:16.893Z",
-      "modifiedAt": "2026-08-10T16:35:27.637Z",
+      "modifiedAt": "2026-08-11T12:59:05.896Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -168,10 +285,10 @@
       "absolutePath": "C:/Framework/examples/real-project/design/creative-dna.json",
       "filename": "creative-dna.json",
       "extension": "json",
-      "sizeBytes": 1600,
-      "sha256": "12a959e47e140dfc1ed2f603666ca7763af4137f3e2abd178f18c1757e5382e9",
+      "sizeBytes": 1582,
+      "sha256": "aba2b78c35d95f4316dbca88057c880b6c6946b96d1e1089b94a3c8eda2e5d4e",
       "createdAt": "2026-08-10T11:00:30.640Z",
-      "modifiedAt": "2026-08-10T16:35:27.647Z",
+      "modifiedAt": "2026-08-11T12:59:05.919Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -181,10 +298,10 @@
       "absolutePath": "C:/Framework/examples/real-project/design/decision-logs.json",
       "filename": "decision-logs.json",
       "extension": "json",
-      "sizeBytes": 1237,
-      "sha256": "a8a1a88d75f81b71f8fb4cb039b146356776937130a555c345b6e57f7c7d587f",
+      "sizeBytes": 1219,
+      "sha256": "51d16c53df8fa3e216accef40b6f8462053b1d04b7237ac13af9e883731fb887",
       "createdAt": "2026-08-10T11:00:30.640Z",
-      "modifiedAt": "2026-08-10T16:35:27.648Z",
+      "modifiedAt": "2026-08-11T12:59:05.920Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -197,7 +314,7 @@
       "sizeBytes": 177,
       "sha256": "11225cd2d1271073937707d3d06f87a0435a47372ca3d1920b6cf5ea307fe8d7",
       "createdAt": "2026-08-10T11:00:30.631Z",
-      "modifiedAt": "2026-08-10T16:35:27.637Z",
+      "modifiedAt": "2026-08-11T12:59:05.896Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -210,7 +327,7 @@
       "sizeBytes": 562,
       "sha256": "6be7b2c4531d8cf5413b8dd3cfbfb72dd74bdeec3dd0f6302718ff1f0492d001",
       "createdAt": "2026-08-10T11:00:30.646Z",
-      "modifiedAt": "2026-08-10T16:35:27.657Z",
+      "modifiedAt": "2026-08-11T12:59:05.944Z",
       "category": "Unknown",
       "mimeType": "application/octet-stream",
       "isZeroByte": false
@@ -220,10 +337,10 @@
       "absolutePath": "C:/Framework/examples/real-project/landing/index.html",
       "filename": "index.html",
       "extension": "html",
-      "sizeBytes": 3653,
-      "sha256": "656c71bd936752de9ecaa38008962bbcec43e6af1adb72fb84586d20ea33886f",
+      "sizeBytes": 3563,
+      "sha256": "605195929309b7cd75dd326e87e011d26433a39941e4acb17dbbdb4b56a6931d",
       "createdAt": "2026-08-10T11:00:30.645Z",
-      "modifiedAt": "2026-08-10T16:35:27.657Z",
+      "modifiedAt": "2026-08-11T12:59:05.943Z",
       "category": "Unknown",
       "mimeType": "application/octet-stream",
       "isZeroByte": false
@@ -233,10 +350,10 @@
       "absolutePath": "C:/Framework/examples/real-project/landing/public/robots.txt",
       "filename": "robots.txt",
       "extension": "txt",
-      "sizeBytes": 80,
-      "sha256": "5ff9a4c1050212468d1b9e891c154db2417378d43fa9152e9ef84ea0d01a8424",
+      "sizeBytes": 68,
+      "sha256": "2a27df4c54f4c8500912e6e1e6ebc77d4c3a0e8fe6f0855b9e1752dc91c09eca",
       "createdAt": "2026-08-10T11:00:30.646Z",
-      "modifiedAt": "2026-08-10T16:35:27.658Z",
+      "modifiedAt": "2026-08-11T12:59:05.944Z",
       "category": "Document",
       "mimeType": "text/plain",
       "isZeroByte": false
@@ -246,10 +363,10 @@
       "absolutePath": "C:/Framework/examples/real-project/landing/public/sitemap.xml",
       "filename": "sitemap.xml",
       "extension": "xml",
-      "sizeBytes": 241,
-      "sha256": "81419859033c4ddb79755c9a8119bdeb49ae9eaf8c4fb5b6c04b4b905a25a2b1",
+      "sizeBytes": 229,
+      "sha256": "1785f7bebe39e21ea140bad691b65f935d7f923a5f59875ef7f134b249b863fa",
       "createdAt": "2026-08-10T11:00:30.646Z",
-      "modifiedAt": "2026-08-10T16:35:27.657Z",
+      "modifiedAt": "2026-08-11T12:59:05.944Z",
       "category": "Unknown",
       "mimeType": "application/octet-stream",
       "isZeroByte": false
@@ -262,7 +379,7 @@
       "sizeBytes": 1124,
       "sha256": "cb73c6dee03f673c813877e372b3f171de3172f4cb29f36928087ad93874a70c",
       "createdAt": "2026-08-10T11:00:30.645Z",
-      "modifiedAt": "2026-08-10T16:35:27.657Z",
+      "modifiedAt": "2026-08-11T12:59:05.944Z",
       "category": "Unknown",
       "mimeType": "application/octet-stream",
       "isZeroByte": false
@@ -272,10 +389,10 @@
       "absolutePath": "C:/Framework/examples/real-project/project-index.json",
       "filename": "project-index.json",
       "extension": "json",
-      "sizeBytes": 20365,
-      "sha256": "b13b9821c0ee9cf3aafeeee5754948a214d724413c0231e9575f1039a51da02f",
+      "sizeBytes": 25476,
+      "sha256": "9ae2fdd8ec9ce88fe304b25cc08bc967f6374f0e8b7581476b499d7c76419427",
       "createdAt": "2026-08-10T11:00:30.629Z",
-      "modifiedAt": "2026-08-10T16:35:27.636Z",
+      "modifiedAt": "2026-08-11T12:59:05.895Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -285,10 +402,10 @@
       "absolutePath": "C:/Framework/examples/real-project/PROJECT_ANALYSIS.md",
       "filename": "PROJECT_ANALYSIS.md",
       "extension": "md",
-      "sizeBytes": 481,
-      "sha256": "526892ef0b0a763890c8c23e872e2dffc8737297cc373a8132e752364a0b757d",
+      "sizeBytes": 869,
+      "sha256": "991fcb10b9152c50ba0de321c8a643c00c0210ffbd9c766a44a38708abb5e174",
       "createdAt": "2026-08-10T11:00:30.630Z",
-      "modifiedAt": "2026-08-10T16:35:27.636Z",
+      "modifiedAt": "2026-08-11T12:59:05.895Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -298,10 +415,10 @@
       "absolutePath": "C:/Framework/examples/real-project/PROJECT_STATUS.json",
       "filename": "PROJECT_STATUS.json",
       "extension": "json",
-      "sizeBytes": 366,
-      "sha256": "952dbc9baa2038b5599a6de1f56db176772680350e58db0143243f8216f7aa38",
+      "sizeBytes": 433,
+      "sha256": "8eed830b122d3afba109332c406bc2b0aef34bb3a6b97e4d7d3f39b17f87adaa",
       "createdAt": "2026-08-10T11:00:30.629Z",
-      "modifiedAt": "2026-08-10T16:35:27.636Z",
+      "modifiedAt": "2026-08-11T12:59:05.895Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -311,10 +428,10 @@
       "absolutePath": "C:/Framework/examples/real-project/PROJECT_STRUCTURE.md",
       "filename": "PROJECT_STRUCTURE.md",
       "extension": "md",
-      "sizeBytes": 2333,
-      "sha256": "a451a1a4db8de3826c952858e7df6defff41113b08a12273403ea2176fd5226a",
+      "sizeBytes": 3008,
+      "sha256": "f26e16d45d4a061b17c995e615f006c8be75719a6e5bf66f2a0b4bac058c7fe1",
       "createdAt": "2026-08-10T11:00:30.630Z",
-      "modifiedAt": "2026-08-10T16:35:27.636Z",
+      "modifiedAt": "2026-08-11T12:59:05.896Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -337,10 +454,10 @@
       "absolutePath": "C:/Framework/examples/real-project/reports/bootstrap-report.md",
       "filename": "bootstrap-report.md",
       "extension": "md",
-      "sizeBytes": 662,
-      "sha256": "914761a2b749277a760ee4a0b1e593de66351086675fe7cfe51dd87196d6b89c",
+      "sizeBytes": 1077,
+      "sha256": "e624f629d4dfd842d089b3853ef8e2c8a8fb30650755152ee28371b7489e5c7b",
       "createdAt": "2026-08-10T11:00:30.631Z",
-      "modifiedAt": "2026-08-10T16:35:27.637Z",
+      "modifiedAt": "2026-08-11T12:59:05.896Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -350,10 +467,10 @@
       "absolutePath": "C:/Framework/examples/real-project/reports/build-report.md",
       "filename": "build-report.md",
       "extension": "md",
-      "sizeBytes": 341,
-      "sha256": "024a4c7327afa54194c96abb764466cdaf1713db4ba6580b5b39fd13441559be",
+      "sizeBytes": 322,
+      "sha256": "d6e672a2628f664da2b4a780b158941e2a3db38a4ba8af4e3d60335e39bed945",
       "createdAt": "2026-08-10T11:00:30.647Z",
-      "modifiedAt": "2026-08-10T16:35:27.658Z",
+      "modifiedAt": "2026-08-11T12:59:05.945Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -363,10 +480,10 @@
       "absolutePath": "C:/Framework/examples/real-project/reports/execution-report.json",
       "filename": "execution-report.json",
       "extension": "json",
-      "sizeBytes": 319,
-      "sha256": "26ff5187b43a4d75a06354967969660a58e588746c18f8d4ed71640c2637da0d",
+      "sizeBytes": 301,
+      "sha256": "c4fff853ed9519448e92c64272b3755bdb2e366226c14ac448890d74652a4ba8",
       "createdAt": "2026-08-10T11:00:30.655Z",
-      "modifiedAt": "2026-08-10T16:35:27.667Z",
+      "modifiedAt": "2026-08-11T12:59:05.958Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -376,10 +493,10 @@
       "absolutePath": "C:/Framework/examples/real-project/reports/EXECUTION_REPORT.md",
       "filename": "EXECUTION_REPORT.md",
       "extension": "md",
-      "sizeBytes": 849,
-      "sha256": "945f0a74081b6e3392a7d24145e18939ceeec621d5b563e44d8eb07666068756",
+      "sizeBytes": 831,
+      "sha256": "10ef1bd43b7a617c1fd3673d1855180d50b40d8bc690dd5575d20b493d2b0ae0",
       "createdAt": "2026-08-10T11:00:30.656Z",
-      "modifiedAt": "2026-08-10T16:35:27.667Z",
+      "modifiedAt": "2026-08-11T12:59:05.958Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -389,10 +506,10 @@
       "absolutePath": "C:/Framework/examples/real-project/reports/FINAL_AUDIT.md",
       "filename": "FINAL_AUDIT.md",
       "extension": "md",
-      "sizeBytes": 1444,
-      "sha256": "5aa2eb478bbd551f65351457f28cc997875a3547ed6e9594e5c896f724d80341",
+      "sizeBytes": 1426,
+      "sha256": "5fe637ef206e7b03a2a784324caeb2194f349ff0b21ebb5b5de9ab3becce9759",
       "createdAt": "2026-08-10T11:00:30.653Z",
-      "modifiedAt": "2026-08-10T16:35:27.663Z",
+      "modifiedAt": "2026-08-11T12:59:05.952Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -402,10 +519,10 @@
       "absolutePath": "C:/Framework/examples/real-project/reports/publication-report.md",
       "filename": "publication-report.md",
       "extension": "md",
-      "sizeBytes": 263,
-      "sha256": "51df2872db2cb0eb7ba3851d57be6338a1da80bd5144a79c93f7f8929936714d",
+      "sizeBytes": 244,
+      "sha256": "6947dfc80ee715c93b7e9061ff6901b2301282f9ea0ff4d6ed0d78d8ce1503e5",
       "createdAt": "2026-08-10T16:34:51.376Z",
-      "modifiedAt": "2026-08-10T16:35:27.665Z",
+      "modifiedAt": "2026-08-11T12:59:05.955Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -416,55 +533,55 @@
       "relativePath": "00-loader",
       "absolutePath": "C:/Framework/examples/real-project/00-loader",
       "name": "00-loader",
-      "childrenCount": 1
+      "childrenCount": 2
     },
     {
       "relativePath": "01-discovery",
       "absolutePath": "C:/Framework/examples/real-project/01-discovery",
       "name": "01-discovery",
-      "childrenCount": 1
+      "childrenCount": 2
     },
     {
       "relativePath": "02-brand-strategy",
       "absolutePath": "C:/Framework/examples/real-project/02-brand-strategy",
       "name": "02-brand-strategy",
-      "childrenCount": 1
+      "childrenCount": 2
     },
     {
       "relativePath": "03-design-system",
       "absolutePath": "C:/Framework/examples/real-project/03-design-system",
       "name": "03-design-system",
-      "childrenCount": 1
+      "childrenCount": 2
     },
     {
       "relativePath": "04-copywriting",
       "absolutePath": "C:/Framework/examples/real-project/04-copywriting",
       "name": "04-copywriting",
-      "childrenCount": 1
+      "childrenCount": 2
     },
     {
       "relativePath": "05-creative-direction",
       "absolutePath": "C:/Framework/examples/real-project/05-creative-direction",
       "name": "05-creative-direction",
-      "childrenCount": 1
+      "childrenCount": 2
     },
     {
       "relativePath": "06-experience-design",
       "absolutePath": "C:/Framework/examples/real-project/06-experience-design",
       "name": "06-experience-design",
-      "childrenCount": 1
+      "childrenCount": 2
     },
     {
       "relativePath": "07-ui-architecture",
       "absolutePath": "C:/Framework/examples/real-project/07-ui-architecture",
       "name": "07-ui-architecture",
-      "childrenCount": 1
+      "childrenCount": 2
     },
     {
       "relativePath": "07.1-cinematic-experience",
       "absolutePath": "C:/Framework/examples/real-project/07.1-cinematic-experience",
       "name": "07.1-cinematic-experience",
-      "childrenCount": 1
+      "childrenCount": 2
     },
     {
       "relativePath": "assets",
@@ -557,5 +674,19 @@
       "childrenCount": 0
     }
   ],
-  "duplicateFiles": []
+  "duplicateFiles": [
+    {
+      "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
+      "files": [
+        "01-discovery/output.json",
+        "02-brand-strategy/output.json",
+        "03-design-system/output.json",
+        "04-copywriting/output.json",
+        "05-creative-direction/output.json",
+        "06-experience-design/output.json",
+        "07-ui-architecture/output.json",
+        "07.1-cinematic-experience/output.json"
+      ]
+    }
+  ]
 }
