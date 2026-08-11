@@ -48,6 +48,10 @@ export class DoctorCommand implements KDLCLICommand {
           const providerHealth = await AIProviderRegistry.getEcosystemHealth();
           if (providerHealth.status === 'HEALTHY') {
             logger.success(`AI Provider System: HEALTHY (${providerHealth.providerId})`);
+            if (providerHealth.providerId === 'gemini') {
+              logger.success(`  API Mode: Interactions API`);
+              logger.success(`  Primary Model: ${process.env.KDL_GEMINI_MODEL || 'gemini-3.1-pro-preview'}`);
+            }
           } else {
             logger.warn(`AI Provider System: NOT CONFIGURED (${providerHealth.message})`);
           }
