@@ -30,14 +30,32 @@ export class GeminiProvider implements AIProvider {
       throw new Error('NO_AI_PROVIDER_CONFIGURED: Gemini API Key missing.');
     }
 
+    const model = process.env.KDL_GEMINI_MODEL || process.env.GEMINI_MODEL || 'gemini-2.5-pro';
+
     try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=${this.apiKey}`;
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${this.apiKey}`;
+      const payload: Record<string, any> = {
+        contents: [
+          {
+            parts: [
+              {
+                text: `${request.systemInstruction ? request.systemInstruction + '\n\n' : ''}${request.prompt}`,
+              },
+            ],
+          },
+        ],
+      };
+
+      if (request.responseFormat === 'json') {
+        payload.generationConfig = {
+          responseMimeType: 'application/json',
+        };
+      }
+
       const response = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: `${request.systemInstruction ? request.systemInstruction + '\n\n' : ''}${request.prompt}` }] }],
-        }),
+        body: JSON.stringify(payload),
       });
 
       if (!response.ok) {
@@ -61,7 +79,7 @@ export class GeminiProvider implements AIProvider {
         content: text,
         jsonPayload,
         providerId: this.id,
-        model: 'gemini-1.5-pro',
+        model,
         durationMs: Date.now() - startTime,
       };
     } catch (err: any) {

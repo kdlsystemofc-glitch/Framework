@@ -294,5 +294,13 @@
     "visualStyle": "Cinematic KDL Gold Standard",
     "displayFont": "Syne",
     "recordedAt": "2026-08-11T13:41:50.962Z"
+  },
+  {
+    "projectName": "real-project",
+    "sector": "restaurants",
+    "dfiiScore": 95.5,
+    "visualStyle": "Cinematic KDL Gold Standard",
+    "displayFont": "Syne",
+    "recordedAt": "2026-08-11T13:53:46.633Z"
   }
 ]
