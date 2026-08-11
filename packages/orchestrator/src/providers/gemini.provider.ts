@@ -24,16 +24,28 @@ export class GeminiProvider implements AIProvider {
     };
   }
 
+  public sanitizeModelName(inputModel?: string): string {
+    let rawModel = inputModel || process.env.KDL_GEMINI_MODEL || process.env.GEMINI_MODEL || 'gemini-2.5-pro';
+    rawModel = rawModel.replace(/["']/g, '').trim();
+    if (rawModel.startsWith('models/')) {
+      rawModel = rawModel.substring('models/'.length);
+    } else if (rawModel.startsWith('/models/')) {
+      rawModel = rawModel.substring('/models/'.length);
+    }
+    return rawModel;
+  }
+
   public async generate(request: AIRequest): Promise<AIResponse> {
     const startTime = Date.now();
     if (!this.apiKey) {
       throw new Error('NO_AI_PROVIDER_CONFIGURED: Gemini API Key missing.');
     }
 
-    const model = process.env.KDL_GEMINI_MODEL || process.env.GEMINI_MODEL || 'gemini-2.5-pro';
+    const model = this.sanitizeModelName();
+    const safeEndpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
+    const fullUrl = `${safeEndpoint}?key=${this.apiKey}`;
 
     try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${this.apiKey}`;
       const payload: Record<string, any> = {
         contents: [
           {
@@ -52,14 +64,30 @@ export class GeminiProvider implements AIProvider {
         };
       }
 
-      const response = await fetch(url, {
+      const response = await fetch(fullUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
 
       if (!response.ok) {
-        throw new Error(`Gemini API HTTP error: ${response.status} ${response.statusText}`);
+        let errorText = '';
+        try {
+          errorText = await response.text();
+        } catch {
+          errorText = response.statusText;
+        }
+
+        const sanitizedError = errorText.substring(0, 500);
+
+        console.error(`[KDL ERROR] Gemini API HTTP error ${response.status}:`);
+        console.error(`  Provider: ${this.id}`);
+        console.error(`  Model: ${model}`);
+        console.error(`  Endpoint: ${safeEndpoint}`);
+        console.error(`  HTTP Status: ${response.status} ${response.statusText}`);
+        console.error(`  Error Body: ${sanitizedError}`);
+
+        throw new Error(`Gemini API HTTP error ${response.status} ${response.statusText}: ${sanitizedError}`);
       }
 
       const data = (await response.json()) as any;

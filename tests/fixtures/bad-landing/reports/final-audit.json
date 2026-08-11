@@ -132,7 +132,7 @@
           "autoFixable": false
         }
       ],
-      "timestamp": "2026-08-11T13:54:45.756Z"
+      "timestamp": "2026-08-11T14:21:40.248Z"
     },
     {
       "id": "gate-accessibility",
@@ -179,7 +179,7 @@
           "autoFixable": true
         }
       ],
-      "timestamp": "2026-08-11T13:54:45.756Z"
+      "timestamp": "2026-08-11T14:21:40.248Z"
     },
     {
       "id": "gate-seo",
@@ -202,7 +202,7 @@
           "autoFixable": false
         }
       ],
-      "timestamp": "2026-08-11T13:54:45.756Z"
+      "timestamp": "2026-08-11T14:21:40.248Z"
     },
     {
       "id": "gate-best-practices",
@@ -266,7 +266,7 @@
           "autoFixable": false
         }
       ],
-      "timestamp": "2026-08-11T13:54:45.756Z"
+      "timestamp": "2026-08-11T14:21:40.248Z"
     },
     {
       "id": "gate-originality",
@@ -279,7 +279,7 @@
         "Originality evaluation missing from AI Director output."
       ],
       "issues": [],
-      "timestamp": "2026-08-11T13:54:45.756Z"
+      "timestamp": "2026-08-11T14:21:40.248Z"
     },
     {
       "id": "gate-dfii",
@@ -292,7 +292,7 @@
         "DFII evaluation missing from AI Director output."
       ],
       "issues": [],
-      "timestamp": "2026-08-11T13:54:45.756Z"
+      "timestamp": "2026-08-11T14:21:40.248Z"
     },
     {
       "id": "gate-cinematic",
@@ -305,7 +305,7 @@
         "Cinematic Experience measurement unavailable."
       ],
       "issues": [],
-      "timestamp": "2026-08-11T13:54:45.756Z"
+      "timestamp": "2026-08-11T14:21:40.248Z"
     }
   ],
   "passedAllGates": false,
@@ -318,7 +318,7 @@
   },
   "provenance": {
     "frameworkVersion": "1.0.0",
-    "auditTimestamp": "2026-08-11T13:54:45.756Z",
+    "auditTimestamp": "2026-08-11T14:21:40.248Z",
     "nodeVersion": "v24.15.0",
     "browserVersion": "Playwright Chromium"
   },

@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-08-11T13:53:46.604Z",
+  "generatedAt": "2026-08-11T14:20:38.976Z",
   "projectPath": "C:\\Framework\\examples\\real-project",
   "projectName": "real-project",
   "totalFiles": 45,
   "totalDirectories": 26,
-  "totalSizeBytes": 140143,
+  "totalSizeBytes": 140744,
   "files": [
     {
       "relativePath": "00-loader/client-briefing.json",
@@ -13,9 +13,9 @@
       "filename": "client-briefing.json",
       "extension": "json",
       "sizeBytes": 2991,
-      "sha256": "7407f114a43c02fe610cede2c206b2e52bf03a842517279922b450c430a9e346",
+      "sha256": "9f1b570553cb202f8150f05d64e171b7f006f735ff32a0910317d7bccbc7ec48",
       "createdAt": "2026-08-11T12:57:08.151Z",
-      "modifiedAt": "2026-08-11T13:41:50.937Z",
+      "modifiedAt": "2026-08-11T13:53:46.609Z",
       "category": "Briefing",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -28,7 +28,7 @@
       "sizeBytes": 289,
       "sha256": "4c0114e5b8ca8cfc4d1672de932f7881a8d7c255be1eb2264026524ebc84ed18",
       "createdAt": "2026-08-10T16:34:18.957Z",
-      "modifiedAt": "2026-08-11T13:41:50.936Z",
+      "modifiedAt": "2026-08-11T13:53:46.608Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -41,7 +41,7 @@
       "sizeBytes": 622,
       "sha256": "afdbdafcb037040287f0d0c5f7b53bf3a9edc22142e82d43359f14e3e7f0aae2",
       "createdAt": "2026-08-10T16:34:18.960Z",
-      "modifiedAt": "2026-08-11T13:41:50.942Z",
+      "modifiedAt": "2026-08-11T13:53:46.613Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -54,7 +54,7 @@
       "sizeBytes": 449,
       "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
       "createdAt": "2026-08-11T12:58:03.152Z",
-      "modifiedAt": "2026-08-11T13:41:50.943Z",
+      "modifiedAt": "2026-08-11T13:53:46.614Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -67,7 +67,7 @@
       "sizeBytes": 627,
       "sha256": "95e982b0194c8c91abc7234f5db69a7eb47038e109be4c3193a636be4fb49ed4",
       "createdAt": "2026-08-10T16:34:18.962Z",
-      "modifiedAt": "2026-08-11T13:41:50.947Z",
+      "modifiedAt": "2026-08-11T13:53:46.617Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -80,7 +80,7 @@
       "sizeBytes": 449,
       "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
       "createdAt": "2026-08-11T12:58:03.156Z",
-      "modifiedAt": "2026-08-11T13:41:50.947Z",
+      "modifiedAt": "2026-08-11T13:53:46.618Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -93,7 +93,7 @@
       "sizeBytes": 626,
       "sha256": "251eb98eb0bf169ad8e50392b02f510fc8e3546a499902bd6a9da1c5b22fc314",
       "createdAt": "2026-08-10T16:34:18.967Z",
-      "modifiedAt": "2026-08-11T13:41:50.953Z",
+      "modifiedAt": "2026-08-11T13:53:46.624Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -106,7 +106,7 @@
       "sizeBytes": 449,
       "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
       "createdAt": "2026-08-11T12:58:03.162Z",
-      "modifiedAt": "2026-08-11T13:41:50.954Z",
+      "modifiedAt": "2026-08-11T13:53:46.625Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -119,7 +119,7 @@
       "sizeBytes": 624,
       "sha256": "e287aeb31cf39dda15dbfbfad72b43cdb29830601f36594e740d223956569027",
       "createdAt": "2026-08-10T16:34:18.970Z",
-      "modifiedAt": "2026-08-11T13:41:50.957Z",
+      "modifiedAt": "2026-08-11T13:53:46.629Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -132,7 +132,7 @@
       "sizeBytes": 449,
       "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
       "createdAt": "2026-08-11T12:58:03.167Z",
-      "modifiedAt": "2026-08-11T13:41:50.958Z",
+      "modifiedAt": "2026-08-11T13:53:46.629Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -145,7 +145,7 @@
       "sizeBytes": 631,
       "sha256": "e4d8c9290e7d3fd432f3b38690929baa1b44834f7fb58d2ca65de75e7a9abe81",
       "createdAt": "2026-08-10T16:34:51.337Z",
-      "modifiedAt": "2026-08-11T13:41:50.964Z",
+      "modifiedAt": "2026-08-11T13:53:46.635Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -158,7 +158,7 @@
       "sizeBytes": 449,
       "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
       "createdAt": "2026-08-11T12:58:03.173Z",
-      "modifiedAt": "2026-08-11T13:41:50.964Z",
+      "modifiedAt": "2026-08-11T13:53:46.636Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -171,7 +171,7 @@
       "sizeBytes": 630,
       "sha256": "a76023ed8669ba447c0b9fcfdb5507aac1a051e638757c04ab01d4307edf6c3c",
       "createdAt": "2026-08-10T16:34:51.340Z",
-      "modifiedAt": "2026-08-11T13:41:50.969Z",
+      "modifiedAt": "2026-08-11T13:53:46.640Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -184,7 +184,7 @@
       "sizeBytes": 449,
       "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
       "createdAt": "2026-08-11T12:58:03.177Z",
-      "modifiedAt": "2026-08-11T13:41:50.969Z",
+      "modifiedAt": "2026-08-11T13:53:46.641Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -197,7 +197,7 @@
       "sizeBytes": 449,
       "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
       "createdAt": "2026-08-11T12:58:03.181Z",
-      "modifiedAt": "2026-08-11T13:41:50.973Z",
+      "modifiedAt": "2026-08-11T13:53:46.645Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -210,7 +210,7 @@
       "sizeBytes": 628,
       "sha256": "f019cce8ecc2a4d030bf01e49d1761cf91c8d7905b492f08e7bb283003bc78e9",
       "createdAt": "2026-08-10T16:34:51.343Z",
-      "modifiedAt": "2026-08-11T13:41:50.973Z",
+      "modifiedAt": "2026-08-11T13:53:46.645Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -223,7 +223,7 @@
       "sizeBytes": 635,
       "sha256": "bd9894b7adeeae1867436c2f74bbf808ce898ad0e87ba02d4d62c9cd284fb0de",
       "createdAt": "2026-08-10T16:34:51.346Z",
-      "modifiedAt": "2026-08-11T13:41:50.977Z",
+      "modifiedAt": "2026-08-11T13:53:46.648Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -236,7 +236,7 @@
       "sizeBytes": 449,
       "sha256": "a76c4ae920d7b94383ab61de2f0dead48283da3f1ab00ec5f2df0aeb990d7604",
       "createdAt": "2026-08-11T12:58:03.186Z",
-      "modifiedAt": "2026-08-11T13:41:50.978Z",
+      "modifiedAt": "2026-08-11T13:53:46.649Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -275,7 +275,7 @@
       "sizeBytes": 200,
       "sha256": "70ab45b5c60e3f69106aa50b7a2e52d67ee8f2501f27b57f4daab92973c1cb26",
       "createdAt": "2026-08-10T10:59:16.893Z",
-      "modifiedAt": "2026-08-11T13:41:50.936Z",
+      "modifiedAt": "2026-08-11T13:53:46.607Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -286,9 +286,9 @@
       "filename": "creative-dna.json",
       "extension": "json",
       "sizeBytes": 1582,
-      "sha256": "e829b788af644ac87689194683e39cb7568c69afd67f0970074507dad2b0f85d",
+      "sha256": "5ab019ae13e20b0f6771ef80bacaedd523bb0c483abf33777764eda10b7b7219",
       "createdAt": "2026-08-10T11:00:30.640Z",
-      "modifiedAt": "2026-08-11T13:41:50.961Z",
+      "modifiedAt": "2026-08-11T13:53:46.632Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -299,9 +299,9 @@
       "filename": "decision-logs.json",
       "extension": "json",
       "sizeBytes": 1219,
-      "sha256": "b1f8f6253115ff1f1c64ae160181bbe245c51034b39cebc0833df7eb1ead1d89",
+      "sha256": "b14a06bfc60be5bee3daf4031bd577ccaad73ee6c0635a14c0972382854481bd",
       "createdAt": "2026-08-10T11:00:30.640Z",
-      "modifiedAt": "2026-08-11T13:41:50.962Z",
+      "modifiedAt": "2026-08-11T13:53:46.632Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -314,7 +314,7 @@
       "sizeBytes": 177,
       "sha256": "11225cd2d1271073937707d3d06f87a0435a47372ca3d1920b6cf5ea307fe8d7",
       "createdAt": "2026-08-10T11:00:30.631Z",
-      "modifiedAt": "2026-08-11T13:41:50.936Z",
+      "modifiedAt": "2026-08-11T13:53:46.607Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -327,7 +327,7 @@
       "sizeBytes": 562,
       "sha256": "6be7b2c4531d8cf5413b8dd3cfbfb72dd74bdeec3dd0f6302718ff1f0492d001",
       "createdAt": "2026-08-10T11:00:30.646Z",
-      "modifiedAt": "2026-08-11T13:41:50.986Z",
+      "modifiedAt": "2026-08-11T13:53:46.657Z",
       "category": "Unknown",
       "mimeType": "application/octet-stream",
       "isZeroByte": false
@@ -353,7 +353,7 @@
       "sizeBytes": 3009,
       "sha256": "451c4a1509b9b580cb3843bbba7eaf822250c7de3adbb4cdef0fb68e20b71e06",
       "createdAt": "2026-08-10T11:00:30.645Z",
-      "modifiedAt": "2026-08-11T13:41:50.993Z",
+      "modifiedAt": "2026-08-11T13:53:46.664Z",
       "category": "Unknown",
       "mimeType": "application/octet-stream",
       "isZeroByte": false
@@ -366,7 +366,7 @@
       "sizeBytes": 68,
       "sha256": "2a27df4c54f4c8500912e6e1e6ebc77d4c3a0e8fe6f0855b9e1752dc91c09eca",
       "createdAt": "2026-08-10T11:00:30.646Z",
-      "modifiedAt": "2026-08-11T13:41:50.987Z",
+      "modifiedAt": "2026-08-11T13:53:46.657Z",
       "category": "Document",
       "mimeType": "text/plain",
       "isZeroByte": false
@@ -379,7 +379,7 @@
       "sizeBytes": 229,
       "sha256": "1785f7bebe39e21ea140bad691b65f935d7f923a5f59875ef7f134b249b863fa",
       "createdAt": "2026-08-10T11:00:30.646Z",
-      "modifiedAt": "2026-08-11T13:41:50.986Z",
+      "modifiedAt": "2026-08-11T13:53:46.657Z",
       "category": "Unknown",
       "mimeType": "application/octet-stream",
       "isZeroByte": false
@@ -392,7 +392,7 @@
       "sizeBytes": 1797,
       "sha256": "ce0a78c82b4b985f3d71a10036c0ed5cc123574c03d7a3728db7ce4cf52b483c",
       "createdAt": "2026-08-10T11:00:30.645Z",
-      "modifiedAt": "2026-08-11T13:41:50.986Z",
+      "modifiedAt": "2026-08-11T13:53:46.657Z",
       "category": "Unknown",
       "mimeType": "application/octet-stream",
       "isZeroByte": false
@@ -402,10 +402,10 @@
       "absolutePath": "C:/Framework/examples/real-project/project-index.json",
       "filename": "project-index.json",
       "extension": "json",
-      "sizeBytes": 28593,
-      "sha256": "79e7f0c584f6d69d913d5ed12662dd04e7763609eb2e2e947454723b47b8bf69",
+      "sizeBytes": 28592,
+      "sha256": "50611848badfba65b27eeb67cdc33baf95dc9b3153b6fe59bde568695cdbd910",
       "createdAt": "2026-08-10T11:00:30.629Z",
-      "modifiedAt": "2026-08-11T13:41:50.935Z",
+      "modifiedAt": "2026-08-11T13:53:46.605Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -416,9 +416,9 @@
       "filename": "PROJECT_ANALYSIS.md",
       "extension": "md",
       "sizeBytes": 893,
-      "sha256": "16fb0f85769224e522985795f6286ff0ff1b17c2394fd1e6e969857152ffeda5",
+      "sha256": "7237f9909cb26153b9731ab39c948addf83496f7ff11ef30e06eab43d45007f4",
       "createdAt": "2026-08-10T11:00:30.630Z",
-      "modifiedAt": "2026-08-11T13:41:50.935Z",
+      "modifiedAt": "2026-08-11T13:53:46.606Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -429,9 +429,9 @@
       "filename": "PROJECT_STATUS.json",
       "extension": "json",
       "sizeBytes": 406,
-      "sha256": "e6079af09b04430ce539cb3f7a1f550a5ba9c15e182026ff9e10ed37bae5b0c4",
+      "sha256": "f7a046ce03465ab0fc15ccbbc36e2cee2e21b931ff5d2fca357bd6e2cb3a21b4",
       "createdAt": "2026-08-10T11:00:30.629Z",
-      "modifiedAt": "2026-08-11T13:41:50.935Z",
+      "modifiedAt": "2026-08-11T13:53:46.605Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -442,9 +442,9 @@
       "filename": "PROJECT_STRUCTURE.md",
       "extension": "md",
       "sizeBytes": 3374,
-      "sha256": "eeeb284fbc63b420f03e9464493972186e93fa3cf1777ccb285dc4419225a1a5",
+      "sha256": "a2b43698e9368cd82d2e155a03de8588ad94046f5d4c95db6040bae3ca0a9fee",
       "createdAt": "2026-08-10T11:00:30.630Z",
-      "modifiedAt": "2026-08-11T13:41:50.936Z",
+      "modifiedAt": "2026-08-11T13:53:46.606Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -468,9 +468,9 @@
       "filename": "bootstrap-report.md",
       "extension": "md",
       "sizeBytes": 1102,
-      "sha256": "3f2e1e036de0bfc2a1f2c973345df303cd44507a99cb599561cbfb3b89715085",
+      "sha256": "f1d670c5124c819de7d19f3942886e75f5fc549f61eb62597d1b5f3fadca87bf",
       "createdAt": "2026-08-10T11:00:30.631Z",
-      "modifiedAt": "2026-08-11T13:41:50.936Z",
+      "modifiedAt": "2026-08-11T13:53:46.607Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -483,7 +483,7 @@
       "sizeBytes": 322,
       "sha256": "d6e672a2628f664da2b4a780b158941e2a3db38a4ba8af4e3d60335e39bed945",
       "createdAt": "2026-08-10T11:00:30.647Z",
-      "modifiedAt": "2026-08-11T13:41:50.987Z",
+      "modifiedAt": "2026-08-11T13:53:46.658Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -494,9 +494,9 @@
       "filename": "execution-report.json",
       "extension": "json",
       "sizeBytes": 302,
-      "sha256": "305b6b3f7558996d7300936c744af4541106b8508794172df576b93216d5dd43",
+      "sha256": "60843bd7122a99f9cce4f765cd4d389e47398613e190fbb5ba3174d78e858e4c",
       "createdAt": "2026-08-10T11:00:30.655Z",
-      "modifiedAt": "2026-08-11T13:42:03.256Z",
+      "modifiedAt": "2026-08-11T13:53:59.178Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -507,9 +507,9 @@
       "filename": "EXECUTION_REPORT.md",
       "extension": "md",
       "sizeBytes": 830,
-      "sha256": "aa97786a0faef0a163170cf68ade90c0bb2860d19c3f799b38e556560b856030",
+      "sha256": "f8ff1c7bfefbe9ab803ffa5b6c18f99648130db06df74223b8a73dad2ed057a1",
       "createdAt": "2026-08-10T11:00:30.656Z",
-      "modifiedAt": "2026-08-11T13:42:03.256Z",
+      "modifiedAt": "2026-08-11T13:53:59.179Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -520,9 +520,9 @@
       "filename": "final-audit.json",
       "extension": "json",
       "sizeBytes": 5181,
-      "sha256": "ad47082d7da21b763ac08b319a9381dec6f65ebec6a34a31a4a9b0261b7d708c",
+      "sha256": "aad8323e057d109e50930580ce6c9648a07fbfc52b0134cb6dfed28d19315930",
       "createdAt": "2026-08-11T13:25:16.975Z",
-      "modifiedAt": "2026-08-11T13:42:03.248Z",
+      "modifiedAt": "2026-08-11T13:53:59.170Z",
       "category": "Unknown",
       "mimeType": "application/json",
       "isZeroByte": false
@@ -533,9 +533,9 @@
       "filename": "FINAL_AUDIT.md",
       "extension": "md",
       "sizeBytes": 1599,
-      "sha256": "f80e61f8f02c2810191a62c18a6e935a0fde4a2db8cf2d4a7845164ec25a979c",
+      "sha256": "cc9524acae0680c44ac8cee0e1bf6421b3f4c9902e76646fa7338e06836a46da",
       "createdAt": "2026-08-10T11:00:30.653Z",
-      "modifiedAt": "2026-08-11T13:42:03.247Z",
+      "modifiedAt": "2026-08-11T13:53:59.170Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -546,9 +546,9 @@
       "filename": "publication-report.md",
       "extension": "md",
       "sizeBytes": 243,
-      "sha256": "b7b1d48fceaef24c34713dbdeda04cf81305534a747c6a44920c927c6db33fff",
+      "sha256": "ae77065571fb00de39cc0b926ab6d53ae2ad68327c8169acab6dc1d74c31c4b9",
       "createdAt": "2026-08-10T16:34:51.376Z",
-      "modifiedAt": "2026-08-11T13:42:03.252Z",
+      "modifiedAt": "2026-08-11T13:53:59.175Z",
       "category": "Document",
       "mimeType": "text/markdown",
       "isZeroByte": false
@@ -561,7 +561,7 @@
       "sizeBytes": 30619,
       "sha256": "9921dd93e4d6de26dd415953f12d096ee519a8dc4c0ed1d8b2ef222d6c2ab156",
       "createdAt": "2026-08-11T13:31:31.813Z",
-      "modifiedAt": "2026-08-11T13:41:52.302Z",
+      "modifiedAt": "2026-08-11T13:53:50.642Z",
       "category": "Image",
       "mimeType": "image/png",
       "isZeroByte": false
@@ -574,7 +574,7 @@
       "sizeBytes": 20894,
       "sha256": "7891116027862a04425826db8a7616b8d1773eb1c2514d23f8f2788fdf06b42a",
       "createdAt": "2026-08-11T13:31:31.478Z",
-      "modifiedAt": "2026-08-11T13:41:51.955Z",
+      "modifiedAt": "2026-08-11T13:53:50.330Z",
       "category": "Image",
       "mimeType": "image/png",
       "isZeroByte": false
@@ -584,10 +584,10 @@
       "absolutePath": "C:/Framework/examples/real-project/reports/screenshots/tablet.png",
       "filename": "tablet.png",
       "extension": "png",
-      "sizeBytes": 24047,
-      "sha256": "11d5b3653f115966314ac810be4d891bb49a51b094b5b8c41004b22889b1c848",
+      "sizeBytes": 24649,
+      "sha256": "c5ae34f3eecc054fe7268f91f281e35e83e8542a5fbebb6d019a69d6770c4e4f",
       "createdAt": "2026-08-11T13:31:31.636Z",
-      "modifiedAt": "2026-08-11T13:41:52.143Z",
+      "modifiedAt": "2026-08-11T13:53:50.483Z",
       "category": "Image",
       "mimeType": "image/png",
       "isZeroByte": false
