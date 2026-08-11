@@ -1,16 +1,33 @@
-:root {
-  --color-dominant-60: #f7f7f7;
-  --color-secondary-30: #e5e5e5;
-  --color-accent-10: #111111;
-  --color-text-primary: #111111;
-  --color-text-secondary: #666666;
+import { AIDirectorResult } from '@kdl/ai-director';
 
-  --font-display: 'Syne', system-ui, -apple-system, sans-serif;
-  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+export class CSSGenerator {
+  public static generateCSS(designSystem: any, directorResult?: AIDirectorResult): string {
+    const colors = designSystem?.colors || directorResult?.designTokens?.colors || {};
+    const typography = designSystem?.typography || directorResult?.designTokens?.typography || {};
+    const layout = designSystem?.layout || directorResult?.designTokens?.layout || {};
 
-  --grid-columns: 12;
-  --grid-gutter: 24px;
-  --grid-margin: 48px;
+    const dominantColor = colors.dominant60 || colors.primary || '#0f172a';
+    const secondaryColor = colors.secondary30 || colors.secondary || '#1e293b';
+    const accentColor = colors.accent10 || colors.accent || '#3b82f6';
+    const textPrimary = colors.textPrimary || '#f8fafc';
+    const textSecondary = colors.textSecondary || '#94a3b8';
+
+    const displayFont = typography.displayFont || 'Inter';
+    const bodyFont = typography.bodyFont || 'Inter';
+
+    return `:root {
+  --color-dominant-60: ${dominantColor};
+  --color-secondary-30: ${secondaryColor};
+  --color-accent-10: ${accentColor};
+  --color-text-primary: ${textPrimary};
+  --color-text-secondary: ${textSecondary};
+
+  --font-display: '${displayFont}', system-ui, -apple-system, sans-serif;
+  --font-body: '${bodyFont}', system-ui, -apple-system, sans-serif;
+
+  --grid-columns: ${layout.columns || 12};
+  --grid-gutter: ${layout.gutterPx || 24}px;
+  --grid-margin: ${layout.marginPx || 32}px;
   --container-max-width: 1200px;
 }
 
@@ -93,5 +110,8 @@ img {
   }
   .section-padding {
     padding: 3rem 0;
+  }
+}
+`;
   }
 }

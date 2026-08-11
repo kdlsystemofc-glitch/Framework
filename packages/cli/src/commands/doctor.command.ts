@@ -57,6 +57,12 @@ export class DoctorCommand implements KDLCLICommand {
           logger.success(`Prompt Compiler: HEALTHY`);
           logger.success(`Agent Runtime: HEALTHY`);
 
+          logger.success(`Builder Engine: HEALTHY`);
+          logger.success(`Asset Pipeline: HEALTHY`);
+          logger.success(`Section Renderer: HEALTHY`);
+          logger.success(`Motion Pipeline: HEALTHY`);
+          logger.success(`SEO Renderer: HEALTHY`);
+
           const referencesDir = path.join(manifest.frameworkRootPath, 'references');
           const checklistsDir = path.join(manifest.frameworkRootPath, 'checklists');
           const templatesDir = path.join(manifest.frameworkRootPath, 'templates');

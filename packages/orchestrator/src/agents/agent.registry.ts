@@ -6,7 +6,7 @@ import { AIProviderRegistry } from '../providers/ai-provider.registry.js';
 import { BootstrapEngine } from '@kdl/bootstrap';
 import { InspirationEngine } from '@kdl/inspiration';
 import { AIDirectorService } from '@kdl/ai-director';
-import { BuilderEngine } from '@kdl/builder';
+import { BuilderEngine, LandingBuildInput } from '@kdl/builder';
 import { ReviewerEngine } from '@kdl/reviewer';
 
 export class AgentRegistry {
@@ -206,8 +206,22 @@ ${JSON.stringify(payload, null, 2)}
           ctx.director = await new AIDirectorService().directProject(ctx.projectName, ctx.projectPath, ctx.sector, ctx.inspiration);
         }
 
+        const buildInput: LandingBuildInput = {
+          project: { projectName: ctx.projectName, projectPath: ctx.projectPath },
+          clientContext: ctx.client.briefing,
+          discovery: ctx.customData['json_01-discovery'],
+          brandStrategy: ctx.customData['json_02-brand-strategy'],
+          designSystem: ctx.customData['json_03-design-system'],
+          copywriting: ctx.customData['json_04-copywriting'],
+          creativeDirection: ctx.customData['json_05-creative-direction'],
+          experienceDesign: ctx.customData['json_06-experience-design'],
+          uiArchitecture: ctx.customData['json_07-ui-architecture'],
+          cinematicExperience: ctx.customData['json_07.1-cinematic-experience'],
+          directorResult: ctx.director,
+        };
+
         const builder = new BuilderEngine();
-        ctx.build = await builder.buildLanding(ctx.director, ctx.projectPath, { target: 'html' });
+        ctx.build = await builder.buildLanding(ctx.director, ctx.projectPath, { target: 'html' }, buildInput);
 
         const content = `# KDL IMPLEMENTATION REPORT — ${ctx.projectName}
 - HTML Output: ${ctx.build.htmlFilePath}
@@ -240,7 +254,12 @@ ${JSON.stringify(payload, null, 2)}
             ctx.director = await new AIDirectorService().directProject(ctx.projectName, ctx.projectPath, ctx.sector, ctx.inspiration);
           }
           if (!ctx.build) {
-            ctx.build = await new BuilderEngine().buildLanding(ctx.director, ctx.projectPath, { target: 'html' });
+            const buildInput: LandingBuildInput = {
+              project: { projectName: ctx.projectName, projectPath: ctx.projectPath },
+              clientContext: ctx.client.briefing,
+              directorResult: ctx.director,
+            };
+            ctx.build = await new BuilderEngine().buildLanding(ctx.director, ctx.projectPath, { target: 'html' }, buildInput);
           }
         }
 

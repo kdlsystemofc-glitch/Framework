@@ -3,8 +3,8 @@ import { SEOPackage } from '../types/builder.types.js';
 
 export class SEOPipeline {
   public static generateSEOPackage(directorResult: AIDirectorResult): SEOPackage {
-    const title = `${directorResult.projectName} — Experience`;
-    const metaDescription = `${directorResult.dna.concept}. High-end landing page created by KDL Framework.`;
+    const title = `${directorResult.projectName}`;
+    const metaDescription = `${directorResult.dna.concept || directorResult.projectName}. ${directorResult.dna.dominantEmotion || ''}`.trim();
     const openGraphTags = `
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${metaDescription}">
@@ -22,10 +22,11 @@ export class SEOPipeline {
       2
     );
 
+    const slug = directorResult.projectName.toLowerCase().replace(/[^a-z0-9]/g, '');
     const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://${directorResult.projectName.toLowerCase().replace(/[^a-z0-9]/g, '')}.com/</loc>
+    <loc>https://${slug}.com/</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <priority>1.0</priority>
   </url>
@@ -33,7 +34,7 @@ export class SEOPipeline {
 
     const robotsTxt = `User-agent: *
 Allow: /
-Sitemap: https://${directorResult.projectName.toLowerCase().replace(/[^a-z0-9]/g, '')}.com/sitemap.xml
+Sitemap: https://${slug}.com/sitemap.xml
 `;
 
     return {
